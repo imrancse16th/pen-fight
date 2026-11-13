@@ -1,0 +1,59 @@
+<!doctype html><html lang="bn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PEN FIGHT — Select Mode</title><link rel="stylesheet" href="../assets/pen.css"><script src="../assets/pen.js"></script>
+<style>
+.card{position:absolute;border-radius:34px;overflow:hidden;cursor:pointer;text-align:center;transition:transform .15s}
+.card:hover{transform:translateY(-6px)}
+.card h3{position:absolute;left:0;right:0;font:800 38px/1.1 var(--f-disp);text-shadow:0 3px 4px rgba(0,0,0,.6)}
+.card p{position:absolute;left:20px;right:20px;font:600 22px/1.25 var(--f-ui);text-shadow:0 2px 3px rgba(0,0,0,.7)}
+.card .cta{position:absolute;left:20px;right:20px;height:66px;border-radius:999px;font:800 30px/66px var(--f-disp);display:flex;align-items:center;justify-content:center;gap:12px}
+.card .cta svg{width:34px;height:34px}
+.c1{background:linear-gradient(#6a2db0 0,#8a3aa0 35%,#b8641c 100%);border:5px solid #ffb12a;box-shadow:0 0 26px rgba(255,170,30,.8)}
+.c2{background:linear-gradient(#5a3ad8 0,#2a4ab8 40%,#122a7a 100%);border:5px solid #58b6ff;box-shadow:0 0 26px rgba(70,160,255,.8)}
+.c3{background:linear-gradient(#7a2aa8 0,#a02a60 40%,#6a1530 100%);border:5px solid #ff5a78;box-shadow:0 0 26px rgba(255,70,110,.8)}
+.s{height:245px;border-radius:28px;top:795px;border:4px solid}
+.s1{background:linear-gradient(#1f6a3a,#154a2a);border-color:#46d07a;box-shadow:0 0 20px rgba(60,210,120,.6)}
+.s2{background:linear-gradient(#5a2ab8,#32157a);border-color:#9a6aff;box-shadow:0 0 20px rgba(140,90,255,.6)}
+.s3{background:linear-gradient(#1c8a8a,#0e5a66);border-color:#4ad8e0;box-shadow:0 0 20px rgba(60,210,220,.6)}
+.s h4{position:absolute;left:0;right:0;top:128px;font:800 34px var(--f-disp);text-align:center;text-shadow:0 2px 4px #0008}
+.s p{position:absolute;left:0;right:0;top:172px;font:600 20px/1.2 var(--f-ui);text-align:center;padding:0 74px 0 24px}
+.s .ar{position:absolute;right:16px;bottom:16px;width:56px;height:56px;border-radius:50%;background:linear-gradient(#ffe45c,#f5aa00);color:#2a1500;display:grid;place-items:center}
+.s .ar svg{width:55%;height:55%}
+.s .md{position:absolute;left:14px;top:-4px;width:72px;height:78px;background:linear-gradient(#35405a,#171d34);clip-path:polygon(50% 0,100% 22%,100% 78%,50% 100%,0 78%,0 22%);display:grid;place-items:center;color:#ffc61a;border:0}
+.s .md svg{width:46%;height:46%}
+.s .ic{position:absolute;left:50%;top:14px;width:130px;height:116px;margin-left:-65px}
+</style></head>
+<body>
+<div class="stage sq" data-w="1182" data-h="1330">
+<div data-scene="sq"></div>
+<div class="cbtn" data-go="s04" style="left:24px;top:28px;width:86px;height:86px;color:#fff"><i data-i="back" style="width:50%;height:50%"></i></div>
+<div data-logo style="--w:230px;left:130px;top:14px"></div>
+<div class="paper-strip" style="left:372px;top:128px;width:480px;height:80px;font-size:40px;transform:rotate(-2deg)">খেলার মোড নির্বাচন করুন</div>
+<div data-cur data-x="632" data-y="25" data-gap="224"></div>
+<!-- top cards -->
+<div class="card c1" data-go="s13" style="left:28px;top:270px;width:372px;height:490px">
+ <div class="a" style="left:-10px;top:30px;width:250px;height:250px"><div data-av="boyT" style="position:absolute;inset:0"></div></div>
+ <svg class="a" style="left:210px;top:128px;width:150px;height:150px" viewBox="0 0 150 150"><circle cx="75" cy="55" r="40" fill="#eef2ff"/><rect x="42" y="38" width="66" height="34" rx="16" fill="#101840"/><circle cx="62" cy="55" r="8" fill="#4ad8ff"/><circle cx="88" cy="55" r="8" fill="#4ad8ff"/><path d="M20 150c0-40 25-55 55-55s55 15 55 55z" fill="#d6b45a"/><text x="75" y="136" font-size="26" font-weight="800" text-anchor="middle" fill="#fff" font-family="Poppins">AI</text></svg>
+ <i data-i="crown" data-c="#ffc61a" class="a" style="left:288px;top:24px;width:60px;height:56px;opacity:.9"></i>
+ <h3 style="top:292px;color:#ffd324;font-size:42px">AI এর সাথে খেলুন</h3><p style="top:350px">কম্পিউটার প্রতিপক্ষকে হারান</p>
+ <div class="cta btn y" style="top:410px;position:absolute;left:20px;right:20px"><i data-i="gamepad"></i>VS AI <i data-i="chev"></i></div></div>
+<div class="card c2" data-go="s06" style="left:412px;top:270px;width:358px;height:490px">
+ <div class="a" style="left:-10px;top:30px;width:200px;height:200px"><div data-av="laugh" style="position:absolute;inset:0"></div></div>
+ <div class="a" style="left:150px;top:30px;width:210px;height:210px"><div data-av="glassesT" style="position:absolute;inset:0"></div></div>
+ <h3 style="top:292px;font-size:40px">বন্ধুর সাথে খেলুন</h3><p style="top:346px">প্রাইভেট রুমে বন্ধুদের সাথে মজার লড়াই</p>
+ <div class="cta btn b" style="top:410px;position:absolute;left:20px;right:20px"><i data-i="users"></i>প্রাইভেট রুম <i data-i="chev"></i></div></div>
+<div class="card c3" data-go="s07" style="left:795px;top:270px;width:362px;height:490px">
+ <i data-i="wifi" class="a" style="left:140px;top:16px;width:80px;height:70px;color:#fff"></i>
+ <svg class="a" style="left:20px;top:80px;width:322px;height:200px" viewBox="0 0 322 200"><rect x="60" y="20" width="200" height="130" rx="14" fill="#0e1a50" stroke="#222" stroke-width="6"/><rect x="66" y="26" width="188" height="118" rx="8" fill="url(#pg)"/><defs><linearGradient id="pg" x1="0" x2="1"><stop offset="0" stop-color="#1c3fd0"/><stop offset="1" stop-color="#d0203a"/></linearGradient></defs><text x="160" y="95" text-anchor="middle" font-family="Lilita One" font-size="36" fill="#ffd324" stroke="#7a1a00" stroke-width="4" paint-order="stroke">VS</text><path d="M90 40l40 70M230 40l-40 70" stroke="#fff" stroke-width="7" stroke-linecap="round" opacity=".7"/><path d="M20 120c0-30 40-30 50-10l-4 60c-30 0-46-20-46-50zM302 120c0-30-40-30-50-10l4 60c30 0 46-20 46-50z" fill="#e3a674"/></svg>
+ <h3 style="top:292px;font-size:42px">র‍্যান্ডম ম্যাচ</h3><p style="top:346px">অনলাইনে র‍্যান্ডম প্লেয়ারের সাথে খেলুন</p>
+ <div class="cta btn" style="top:410px;position:absolute;left:20px;right:20px;background:linear-gradient(#ffb0b8,#ff6a78);color:#5a0010;box-shadow:0 5px 0 #8a1428"><i data-i="globe"></i>অনলাইন ম্যাচ <i data-i="chev"></i></div></div>
+<!-- bottom row -->
+<div class="card s s1" data-go="s07" style="left:30px;width:358px"><b class="md"><i data-i="crown"></i></b><i data-i="trophy" class="ic"></i><h4>র‍্যাংকড ম্যাচ</h4><p>র‍্যাংক বাড়ান ও সেরা খেলোয়াড় হন</p><span class="ar"><i data-i="chev"></i></span></div>
+<div class="card s s2" data-go="s37" style="left:415px;width:355px"><b class="md"><i data-i="trophy"></i></b><b class="dot" style="right:-2px;top:-2px;left:auto"></b><i data-i="calendar" class="ic"></i><h4>টুনামেন্ট</h4><p>বিশেষ ইভেন্ট ও প্রতিযোগিতা</p><span class="ar"><i data-i="chev"></i></span></div>
+<div class="card s s3" data-go="s13" style="left:795px;width:355px"><b class="md"><i data-i="star"></i></b><i data-i="target" class="ic" style="color:#e33"></i><h4>প্র্যাকটিস মোড</h4><p>নিয়ম শিখুন ও দক্ষতা বাড়ান</p><span class="ar"><i data-i="chev"></i></span></div>
+<div data-books style="left:-14px;top:1055px;transform:scale(.88);transform-origin:left top"></div>
+<div data-pen="blue" data-label="KYAU" style="left:290px;top:1150px;width:440px;transform:rotate(-9deg)"></div>
+<div data-pen="red" style="left:600px;top:1190px;width:420px;transform:rotate(10deg)"></div>
+<div data-crumple style="left:1060px;top:1090px;width:140px;height:130px"></div>
+<div class="a hand" style="left:480px;top:1250px;font-size:44px;transform:rotate(-6deg);opacity:.8">Pen Fight</div>
+</div>
+</body></html>

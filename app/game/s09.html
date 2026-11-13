@@ -1,0 +1,64 @@
+<!doctype html><html lang="bn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PEN FIGHT — Select Arena</title><link rel="stylesheet" href="../assets/pen.css"><script src="../assets/pen.js"></script>
+<style>
+.ar{position:absolute;top:196px;height:468px;border-radius:30px;overflow:hidden;border:5px solid;cursor:pointer;transition:transform .15s}
+.ar:hover{transform:translateY(-5px)}
+.ar .pic{position:absolute;left:0;right:0;top:0;height:278px}
+.ar h3{position:absolute;left:0;right:0;top:284px;text-align:center;font:800 38px var(--f-disp)}
+.ar p{position:absolute;left:14px;right:14px;top:336px;text-align:center;font:600 20px/1.25 var(--f-ui)}
+.ar .lvl{position:absolute;left:50%;bottom:16px;transform:translateX(-50%);height:44px;padding:0 24px;border-radius:999px;background:rgba(10,12,30,.8);font:700 26px/44px var(--f-ui);display:flex;gap:10px;align-items:center;white-space:nowrap}
+.ar .lvl svg{width:24px;height:24px}
+.a1{border-color:#ffc61a;background:linear-gradient(#3a2a1a,#1a1008);box-shadow:0 0 30px rgba(255,200,0,.8)}
+.a2{border-color:#3ab0ff;background:linear-gradient(#10305a,#081a38);box-shadow:0 0 22px rgba(60,170,255,.6)}
+.a3{border-color:#a06aff;background:linear-gradient(#2a1650,#14083a);box-shadow:0 0 22px rgba(150,100,255,.6)}
+.a4{border-color:#6a70ff;background:linear-gradient(#26204a,#12102e);box-shadow:0 0 22px rgba(110,110,255,.6)}
+</style></head>
+<body>
+<div class="stage" data-w="1672" data-h="941">
+<div data-scene="day"></div>
+<div data-top data-title="অ্যারিনা নির্বাচন" data-icon="map" data-sub="তোমার পছন্দের ব্যাটল এরিনা নির্বাচন করো!" data-back="s05" data-bx="545" data-bw="560"></div>
+<div data-hero="x" class="a" style="left:-60px;top:190px;width:420px;height:660px;overflow:hidden"></div>
+<div data-books style="left:-20px;top:700px"></div>
+<div data-crumple style="left:1490px;top:740px;width:150px;height:140px"></div>
+<div class="a" style="left:262px;top:394px;width:50px;height:60px;color:rgba(255,255,255,.4);z-index:5"><i data-i="back" style="width:100%;height:100%"></i></div>
+<div class="a" style="left:1612px;top:408px;width:50px;height:60px;color:#fff;z-index:5"><i data-i="fwd" style="width:100%;height:100%"></i></div>
+<!-- 1 classroom -->
+<div class="ar a1" data-pick="arena" style="left:318px;width:312px"><div class="pic" style="background:linear-gradient(180deg,#f0d8b0 0,#d8b078 45%,#b8742e 100%)">
+ <div class="a" style="left:20px;top:20px;width:100px;height:110px;background:linear-gradient(#bfe0f5,#7ab6e0);border:5px solid #7a5028"></div><div class="a" style="left:150px;top:30px;width:140px;height:80px;background:#1f4a3a;border:6px solid #7a5028"></div>
+ <div class="a" style="left:0;top:150px;width:100%;height:130px;background:linear-gradient(#d68a3a,#a8601c);transform:perspective(200px) rotateX(18deg)"></div>
+ <div data-pen="blue" style="left:60px;top:196px;width:150px;transform:rotate(20deg)"></div><div data-pen="red" style="left:100px;top:206px;width:150px;transform:rotate(-20deg)"></div></div>
+ <b class="a" style="right:12px;top:12px;width:52px;height:52px;border-radius:50%;background:#ffc61a;color:#111;display:grid;place-items:center;border:3px solid #fff7"><i data-i="check" style="width:64%;height:64%"></i></b>
+ <h3 style="color:#ffd324">ক্লাসরুম অ্যারিনা</h3><p>ক্লাসরুমের আসল পেন ফাইট অভিজ্ঞতা</p><div class="lvl" style="color:#4ff07a"><i data-i="bars"></i>সহজ</div></div>
+<!-- 2 campus -->
+<div class="ar a2" data-pick="arena" style="left:650px;width:306px"><div class="pic" style="background:linear-gradient(180deg,#8ac6f0 0,#b8dcb0 55%,#6a8a46 100%)">
+ <div class="a" style="left:60px;top:0;width:190px;height:170px;background:radial-gradient(circle at 50% 40%,#4a8a2a,#2a5a18 70%);border-radius:50%"></div><div class="a" style="left:140px;top:120px;width:24px;height:90px;background:#5a3a22"></div>
+ <div class="a" style="left:10px;top:140px;width:290px;height:36px;background:#d6a08c"></div>
+ <div class="a" style="left:60px;top:200px;width:190px;height:50px;background:#b8b0a0;border-radius:50%;box-shadow:0 10px 0 #8a8272"></div></div>
+ <h3>ক্যাম্পাস অ্যারিনা</h3><p>বিশ্ববিদ্যালয় ক্যাম্পাসের ছুঁত পরিবেশে লড়াই</p><div class="lvl" style="color:#ffd324"><i data-i="bars"></i>মধ্যম</div></div>
+<!-- 3 library -->
+<div class="ar a3" data-pick="arena" style="left:976px;width:306px"><div class="pic" style="background:linear-gradient(180deg,#3a2210 0,#6a4020 55%,#a8682c 100%)">
+ <div class="a" style="left:0;top:0;width:100%;height:150px;background:repeating-linear-gradient(90deg,#7a3a22 0 20px,#3a5a8a 20px 38px,#a82a3a 38px 56px,#2a6a4a 56px 74px)"></div>
+ <div class="a" style="left:200px;top:0;width:90px;height:60px;background:#222;border-radius:0 0 40px 40px;box-shadow:0 20px 40px rgba(255,200,80,.5)"></div>
+ <div class="a" style="left:40px;top:170px;width:230px;height:100px;background:#f4f0e4;transform:rotate(-8deg);box-shadow:0 8px 12px rgba(0,0,0,.4)"></div></div>
+ <h3>লাইব্রেরি অ্যারিনা</h3><p>নিস্তুপ লাইব্রেরিতে কৌশল আর বুদ্ধির লড়াই</p><div class="lvl" style="color:#ff6a6a"><i data-i="bars"></i>কঠিন</div></div>
+<!-- 4 roof locked -->
+<div class="ar a4" data-pick="arena" style="left:1300px;width:312px"><div class="pic" style="background:linear-gradient(180deg,#2a3a8a 0,#e0703a 60%,#4a2a40 100%)">
+ <div class="a" style="left:0;top:160px;width:100%;height:120px;background:linear-gradient(#5a5870,#3a3850)"></div><div class="a" style="left:0;top:140px;width:100%;height:30px;background:repeating-linear-gradient(90deg,#111 0 6px,transparent 6px 18px)"></div>
+ <div class="a" style="inset:0;background:rgba(10,8,40,.5)"></div>
+ <i data-i="lock" class="a" style="left:128px;top:50px;width:56px;height:56px;color:#fff;filter:drop-shadow(0 2px 4px #000)"></i><div class="a" style="left:0;right:0;top:114px;text-align:center;font:700 22px var(--f-ui)">লক করা</div>
+ <div class="a" style="left:30px;width:252px;top:154px;height:40px;border-radius:999px;background:rgba(10,10,40,.8);text-align:center;font:600 19px/40px var(--f-ui)">লেভেল ২০ অর্জন করো</div></div>
+ <div class="a" style="right:-4px;top:-2px;height:38px;padding:0 22px 0 14px;background:linear-gradient(#ff5a5a,#c01626);border-radius:0 24px 0 14px;font:700 20px/38px var(--f-ui);display:flex;gap:8px;align-items:center"><i data-i="crown" style="width:22px;height:22px"></i>স্পেশাল</div>
+ <h3>ছাদ অ্যারিনা</h3><p>বিশেষ ছাদ ব্যাটল, সতিকারের চ্যালেঞ্জ!</p><div class="lvl" style="color:#c88aff"><i data-i="bars"></i>বিশেষ</div></div>
+<!-- info -->
+<div class="panel glass" style="left:406px;top:692px;width:876px;height:96px;border-radius:48px"></div>
+<i data-i="gamepad" class="a" style="left:456px;top:708px;width:64px;height:64px"></i><div class="a" style="left:545px;top:706px;font:600 21px var(--f-ui)">ম্যাচ টাইপ<br><b style="color:#ffd324;font-size:25px">র‍্যাংকড ম্যাচ</b></div>
+<div class="a" style="left:718px;top:706px;width:2px;height:64px;background:rgba(255,255,255,.3)"></div>
+<i data-i="users" class="a" style="left:766px;top:708px;width:64px;height:64px"></i><div class="a" style="left:853px;top:706px;font:600 21px var(--f-ui)">মোড<br><b class="num" style="color:#ffd324;font-size:25px">1v1</b></div>
+<div class="a" style="left:958px;top:706px;width:2px;height:64px;background:rgba(255,255,255,.3)"></div>
+<i data-i="clock" class="a" style="left:1024px;top:710px;width:60px;height:60px"></i><div class="a" style="left:1104px;top:706px;font:600 21px var(--f-ui)">ম্যাচ সময়<br><b style="color:#ffd324;font-size:25px">~ ৩-৫ মিনিট</b></div>
+<div class="btn y" data-go="s07" style="left:556px;top:808px;width:556px;height:94px;font-size:42px"><i data-i="swords"></i>এই অ্যারিনায় খেলুন <i data-i="chev"></i></div>
+<div data-pen="blue" data-label="KYAU" style="left:270px;top:840px;width:290px;transform:rotate(-14deg)"></div>
+<div data-pen="red" style="left:1150px;top:850px;width:300px;transform:rotate(14deg)"></div>
+<div class="a hand" style="left:1330px;top:830px;font-size:44px;transform:rotate(-8deg)">Pen Fight</div>
+</div>
+</body></html>

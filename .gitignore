@@ -1,0 +1,43 @@
+# secrets / server-only config (DB password, admin hash) - never commit
+api/config.php
+api/config.local.php
+*.env
+
+# dependencies and build output (rebuilt with npm install / npm run web)
+node_modules/
+game/dist/
+game/android/app/build/
+game/android/build/
+game/android/.gradle/
+game/android/local.properties
+game/android/capacitor-cordova-android-plugins/
+*.apk
+
+# generated web bundle in the project root (made by: cd game && npm run web)
+/assets/
+/img/
+/sfx/
+/index.html
+/manifest.webmanifest
+/icon-192.png
+/icon-512.png
+
+# update packages made by npm run release
+update/*.zip
+update/latest.json
+
+# big design reference images (keep them out of git; share separately)
+Pen Fight Game UI Ida Image/
+
+# editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+deploy/
+
+# AI-agent documentation pack (kept on this PC only, not published)
+docs/
+game/IMAGE-PROMPTS.txt
+game/public/sfx/SOUND-PROMPTS.txt

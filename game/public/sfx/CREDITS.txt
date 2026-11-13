@@ -1,0 +1,10 @@
+Sound effects (all CC0 / public domain, from opengameart.org):
+ hit*, : "35 wooden cracks/hits/destructions" (independent.nu ljudbank)
+ ko*   : "Impact" by qubodup
+ flick*: "Swishes sound pack"          whoosh: "Air whoosh"
+ click : "Menu select tick"            tick  : "Clock tick"
+ fall  : "Big and small item fall sounds"
+ start : "Bell dings/chimes"           turn, funny_boing_2: "Silly sound effects"
+ win   : "Children's game app ending"  lose  : "Lose trumpet"      funny_boing: "Boing"
+Voices (react_*, vs_*): generated with Cartesia (Pooja, Arindam, Kian).
+  sudden : "Mystery sting"

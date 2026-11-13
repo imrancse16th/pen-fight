@@ -1,0 +1,68 @@
+<!doctype html><html lang="bn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PEN FIGHT — Pen Customization</title><link rel="stylesheet" href="../assets/pen.css"><script src="../assets/pen.js"></script>
+<style>
+.sm{position:absolute;left:292px;width:240px;height:52px;border-radius:12px;background:linear-gradient(#2a3768,#121c48);border:2px solid rgba(110,150,255,.4);font:700 24px/48px var(--f-ui);padding-left:76px;cursor:pointer}
+.sm i{position:absolute;left:24px;top:8px;width:34px;height:34px}
+.sm.on{background:linear-gradient(#ffe45c,#f5aa00);color:var(--ink);border-color:#fff3b0}
+.sr{position:absolute;left:1232px;width:392px;height:36px;font:600 22px/36px var(--f-ui)}
+.sr i{position:absolute;left:0;top:0;width:36px;height:36px}
+.sr span{position:absolute;left:52px}
+.sr .b4{position:absolute;left:198px;top:7px;width:146px;height:22px;border-radius:5px;background:repeating-linear-gradient(90deg,#ffc61a 0 26px,transparent 26px 29px);box-shadow:0 0 0 2px rgba(255,255,255,.2)}
+.sr .b4:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent var(--v),rgba(20,28,60,.9) var(--v))}
+.sr b{position:absolute;right:0;font:700 24px/36px var(--f-latin)}
+.tab{position:absolute;top:558px;height:56px;border-radius:999px;font:700 25px/52px var(--f-ui);padding-left:62px;background:linear-gradient(#2a3768,#121c48);border:2px solid rgba(110,150,255,.4);cursor:pointer;white-space:nowrap}
+.tab i{position:absolute;left:20px;top:10px;width:32px;height:32px}
+.tab.on{background:linear-gradient(#ffe45c,#f5aa00);color:var(--ink);border-color:#fff3b0}
+.sk{position:absolute;top:634px;width:184px;height:160px;border-radius:16px;text-align:center;border:3px solid;cursor:pointer;overflow:hidden}
+.sk .pp{position:absolute;left:6px;right:6px;top:16px}
+.sk span:not(.tag){position:absolute;left:0;right:0;top:92px;font:700 21px var(--f-ui)}
+.sk .tag{position:absolute;left:50%;bottom:8px;transform:translateX(-50%);padding:2px 20px;font-size:18px}
+</style></head>
+<body>
+<div class="stage" data-w="1670" data-h="941">
+<div data-scene="day"></div>
+<div data-top data-title="পেন কাস্টমাইজেশন" data-icon="pencil" data-ic="#ff5a5a" data-sub="তোমার পেনকে তোমার স্টাইলে সাজাও! স্কিন, রঙ, ইফেক্ট এবং নাম পরিবর্তন করো!" data-back="s10" data-bx="520" data-bw="600" data-white="1"></div>
+<div data-hero="x" class="a" style="left:-60px;top:190px;width:380px;height:640px;overflow:hidden"></div>
+<div data-books style="left:-20px;top:710px"></div>
+<div data-crumple style="left:1500px;top:790px;width:150px;height:140px"></div>
+<div class="panel" style="left:282px;top:188px;width:1360px;height:628px;border-radius:30px"></div>
+<div class="sm" style="top:196px"><i data-i="pencil" data-c="#fff"></i>আমার পেন</div>
+<div class="sm" style="top:258px"><i data-i="gear"></i>আপগ্রেড</div>
+<div class="sm on" style="top:322px;width:244px"><i data-i="palette" data-c="#2a1500"></i>কাস্টমাইজ</div>
+<div class="sm" style="top:386px"><i data-i="box"></i>স্কিন সংগ্রহ</div>
+<div class="sm" style="top:450px"><i data-i="sparkle"></i>রঙ পরিবর্তন</div>
+<div class="sm" style="top:506px"><i data-i="edit"></i>নাম পরিবর্তন</div>
+<div class="panel glass" style="left:556px;top:186px;width:618px;height:356px;border-radius:26px"></div>
+<div class="a" style="left:594px;top:206px;font:800 38px var(--f-latin)">KYAU বু এডিশন</div><span class="tag epic a" style="left:594px;top:258px;padding:2px 26px;font-size:22px">Epic</span>
+<div class="a" style="left:598px;top:342px;width:50px;height:60px;color:#fff"><i data-i="back" style="width:100%;height:100%"></i></div>
+<div class="a" style="left:1100px;top:342px;width:50px;height:60px;color:#fff"><i data-i="fwd" style="width:100%;height:100%"></i></div>
+<div class="a" style="left:620px;top:430px;width:480px;height:70px;border-radius:50%;background:radial-gradient(ellipse,rgba(170,100,255,.9),rgba(60,100,255,.45) 55%,transparent 75%);box-shadow:0 0 40px #7a4aff"></div>
+<div data-pen="blue" data-label="KYAU" class="float" style="left:632px;top:270px;width:480px;transform:rotate(-27deg)"></div>
+<!-- info -->
+<div class="panel" style="left:1204px;top:188px;width:432px;height:356px;border-radius:24px"></div>
+<i data-i="bars" data-c="#2ac8ff" class="a" style="left:1262px;top:204px;width:42px;height:42px"></i><div class="a" style="left:1322px;top:198px;font:800 34px/58px var(--f-ui)">পেন তথ্য</div>
+<div class="sr" style="top:260px"><i data-i="fist"></i><span>পাওয়ার</span><div class="b4" style="--v:92%"></div><b>92</b></div>
+<div class="sr" style="top:299px"><i data-i="target"></i><span>অ্যাকুরেসি</span><div class="b4" style="--v:88%"></div><b>88</b></div>
+<div class="sr" style="top:338px"><i data-i="bolt"></i><span>স্পিড</span><div class="b4" style="--v:85%"></div><b>85</b></div>
+<div class="sr" style="top:377px"><i data-i="shield"></i><span>ডিউরেবিলিটি</span><div class="b4" style="--v:95%"></div><b>95</b></div>
+<div class="panel pu" style="left:1216px;top:426px;width:410px;height:90px;border-radius:14px"></div>
+<svg class="a" style="left:1230px;top:436px;width:100px;height:70px" viewBox="0 0 100 70"><path d="M10 50c20 10 70 0 80-30-10 20-50 30-80 30z" fill="#ff7ae8"/><path d="M10 40c30 10 60-10 80-30" stroke="#c88aff" stroke-width="5" fill="none"/></svg>
+<div class="a" style="left:1344px;top:436px;font:800 29px var(--f-ui)">বিশেষ ইফেক্ট</div><div class="a" style="left:1344px;top:476px;font:600 20px var(--f-ui)">লেখার সময় প্রো ট্রেইল ইফেক্ট</div>
+<!-- tabs -->
+<div class="tab on" style="left:552px;width:228px"><i data-i="pencil" data-c="#2a1500"></i>পেন স্কিন</div>
+<div class="tab" style="left:794px;width:186px"><i data-i="palette"></i>রঙ</div>
+<div class="tab" style="left:996px;width:204px"><i data-i="sparkle"></i>ইফেক্ট</div>
+<div class="tab" style="left:1214px;width:250px"><i data-i="edit"></i>নাম পরিবর্তন</div>
+<!-- skins -->
+<div class="sk" data-pick="sk" style="left:310px;width:178px;border-color:#ffc61a;background:linear-gradient(#1a2a68,#0c1440);box-shadow:0 0 18px rgba(255,200,0,.7)"><div class="pp"><div data-pen="blue" data-label="KYAU" style="width:150px;transform:rotate(-24deg)"></div></div><span>ডিফল্ট ব্লু</span><span class="tag epic">Epic</span><b class="a" style="right:6px;top:6px;width:34px;height:34px;border-radius:50%;background:#ffc61a;color:#111;display:grid;place-items:center"><i data-i="check" style="width:60%;height:60%"></i></b></div>
+<div class="sk" data-pick="sk" style="left:496px;border-color:#a06aff;background:linear-gradient(#3a1a78,#1a0a48)"><div class="pp"><div data-pen="fire" style="width:150px;transform:rotate(-24deg)"></div></div><span>ফায়ার রেড</span><span class="tag rare">Rare</span></div>
+<div class="sk" data-pick="sk" style="left:684px;border-color:#b89030;background:linear-gradient(#3a2a10,#150e04)"><div class="pp"><div data-pen="gold" style="width:150px;transform:rotate(-24deg)"></div></div><span>গোল্ড রয়্যাল</span><span class="tag leg">Legendary</span></div>
+<div class="sk" data-pick="sk" style="left:874px;border-color:#a06aff;background:linear-gradient(#32127a,#14063a)"><div class="pp"><div data-pen="cyber" style="width:150px;transform:rotate(-24deg)"></div></div><span>নিয়ন সাইবার</span><span class="tag epic">Epic</span></div>
+<div class="sk" data-pick="sk" style="left:1064px;border-color:#2ac07a;background:linear-gradient(#0a4a38,#06241c)"><div class="pp"><div data-pen="green" style="width:150px;transform:rotate(-24deg)"></div></div><span>ক্যাম্পাস গ্রীন</span><span class="tag rare">Rare</span></div>
+<div class="sk" data-pick="sk" style="left:1254px;border-color:#a06aff;background:linear-gradient(#32127a,#14063a)"><div class="pp"><div data-pen="galaxy" style="width:150px;transform:rotate(-24deg)"></div></div><span>গ্যালাক্সি</span><span class="tag leg">Legendary</span></div>
+<div class="sk" data-pick="sk" style="left:1444px;width:180px;border-color:#6a78a0;background:linear-gradient(#2a3450,#12182c)"><div class="pp" style="opacity:.3"><div data-pen="black" style="width:150px;transform:rotate(-24deg)"></div></div><i data-i="lock" class="a" style="left:60px;top:30px;width:54px;height:54px"></i><span>প্রিমিয়াম স্কিন</span><div class="a" style="left:0;right:0;bottom:8px;font:600 15px var(--f-ui)">🔒 ইভেন্ট থেকে আনলক</div></div>
+<div class="btn y" data-toast="সংরক্ষণ হয়েছে" style="left:484px;top:830px;width:528px;height:86px;font-size:38px"><i data-i="check"></i>কাস্টমাইজ সংরক্ষণ করুন</div>
+<div class="btn d" data-toast="রিসেট করা হয়েছে" style="left:1044px;top:836px;width:284px;height:72px;font-size:30px"><i data-i="refresh"></i>রিসেট করুন</div>
+<div data-pen="blue" data-label="KYAU" style="left:240px;top:850px;width:210px;transform:rotate(-16deg)"></div>
+</div>
+</body></html>

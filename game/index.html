@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover" />
+  <meta name="theme-color" content="#0a1a52" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="icon-192.png" />
+  <link rel="apple-touch-icon" href="icon-192.png" />
+  <title>PEN FIGHT — KYAU University</title>
+  <style>
+    html,body{margin:0;height:100%;background:#050a1e;overflow:hidden;touch-action:none;-webkit-user-select:none;user-select:none;overscroll-behavior:none}
+    #app{position:fixed;inset:0}
+    canvas{display:block}
+    /* phone held upright: ask to turn it sideways */
+    #rotate{display:none;position:fixed;inset:0;z-index:50;background:#0a1a52;color:#fff;flex-direction:column;align-items:center;justify-content:center;gap:18px;text-align:center;font-family:'Hind Siliguri','Nirmala UI',sans-serif;padding:24px}
+    #rotate .ph{font-size:84px;animation:tilt 1.8s ease-in-out infinite}
+    #rotate b{font-size:26px}
+    #rotate button{font:700 20px 'Hind Siliguri','Nirmala UI',sans-serif;padding:12px 26px;border:0;border-radius:999px;background:#ffc61a;color:#2a1500}
+    @keyframes tilt{0%,30%{transform:rotate(0)}60%,100%{transform:rotate(-90deg)}}
+    @media (orientation:portrait) and (pointer:coarse){#rotate{display:flex}}
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <div id="rotate"><div class="ph">📱</div><b>ফোনটা আড়াআড়ি (Landscape) করুন</b><span>পূর্ণ স্ক্রিনে খেলতে নিচের বাটন চাপুন</span><button id="goFull">পূর্ণ স্ক্রিনে খেলুন</button></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

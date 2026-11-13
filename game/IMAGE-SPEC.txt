@@ -1,0 +1,120 @@
+PEN FIGHT — ছবির সঠিক মাপ ও ম্যাপ (কোথায় কী থাকবে)
+==================================================
+
+সাধারণ নিয়ম
+-----------
+- সব ব্যাকগ্রাউন্ড ছবি 16:9, আদর্শ মাপ 1920 x 1080 px। Flow/ChatGPT অন্য 16:9 মাপ (1536x864, 1376x768) দিলেও চলবে — নিচে px এর পাশে % ও দেওয়া আছে, % ধরে হিসাব হবে।
+- (0,0) = ছবির উপরের-বাম কোণ। X ডানে, Y নিচে বাড়ে।
+- ছবির ভেতরে কোনো লেখা, লোগো, বাটন, UI থাকবে না (শুধু logo.png ছাড়া)।
+- কেন্দ্রীয় অংশ যেখানে UI বসবে সেটা শান্ত ও কম ডিটেইলের রাখতে বলা আছে।
+- ফাইল রাখার জায়গা: C:\xampp\htdocs\pen\game\public\img\
+
+==============================================================
+A. খেলার বেঞ্চ (সবচেয়ে গুরুত্বপূর্ণ) — 4টি ছবি
+==============================================================
+ফাইল: play_classroom.jpg, play_campus.jpg, play_library.jpg, play_rooftop.jpg
+মাপ: 1920 x 1080 px (16:9)। চারটা ছবিতে বেঞ্চ একদম একই জায়গায়, একই মাপে।
+
+MAP (1920x1080 এ):
+  বেঞ্চের উপরের তল (কাঠ/কংক্রিটের মুখ):
+     বাম কিনারা  X = 189 px   (9.8%)
+     ডান কিনারা  X = 1731 px  (90.2%)
+     উপর কিনারা  Y = 242 px   (22.4%)
+     নিচ কিনারা  Y = 989 px   (91.5%)
+     => আকার 1542 x 747 px, কেন্দ্র (960, 615)
+  সামনের কিনারার পুরুত্ব: Y = 989 থেকে 1013 px (গাঢ় রঙের পাতলা পাট্টি, বেঞ্চের গায়ের পুরুত্ব)
+  বেঞ্চের বাইরে: গাঢ়, ঝাপসা মেঝে/মাটি, কোণগুলো কালোর দিকে মিলিয়ে যাবে।
+  সোজা উপর থেকে (90°) তোলা। কোনো পার্সপেক্টিভ নয়। বেঞ্চ ঘোরানো বা হেলানো নয়, চারটা কিনারা সম্পূর্ণ সোজা।
+  UI এর জন্য: উপরের 0–240 px অংশে (বেঞ্চের উপরে) স্কোরবোর্ড বসবে, তাই ওখানে শুধু গাঢ় মেঝে।
+  বেঞ্চের উপর: একদম খালি। কোনো পেন, দাগ, চক, কাগজ, লেখা, আলোর প্যাটার্ন নয়। শুধু উপাদানের নিজস্ব দানা।
+
+একসাথে 4টার PROMPT (কপি করে পেস্ট করুন):
+------------------------------------------------------------
+Generate 4 SEPARATE images (do not combine them), each exactly 1920x1080 pixels, 16:9 landscape.
+
+COMMON RULES for all 4: Ultra-detailed realistic game art, perfectly TOP-DOWN view (camera looking straight down at 90 degrees, NO perspective, NO tilt, NO rotation), soft even lighting with a gentle vignette. One perfectly straight rectangular bench top lying flat. Its top surface must occupy EXACTLY this rectangle: left edge at x=189px, right edge at x=1731px, top edge at y=242px, bottom edge at y=989px (that is 9.8% to 90.2% of the width and 22.4% to 91.5% of the height). Below the bottom edge there is a thin darker side thickness strip from y=989px to y=1013px. All four edges are sharp, straight and clearly visible. The bench surface is completely EMPTY and clean: NO pens, NO objects, NO marks, NO lines, NO chalk, NO paper, NO text, NO people, NO reflections of windows. Outside the bench: a dark, softly blurred floor/ground that fades to black at the corners; the top 240px strip above the bench is just this dark floor. The bench must be in exactly the same position and size in all 4 images.
+
+IMAGE 1 (classroom): an old Bangladeshi university classroom wooden desk, warm honey-brown planks with natural wood grain, very light wear but visually clean. Floor: dark wooden classroom floor.
+IMAGE 2 (campus): a smooth varnished light-brown outdoor campus wooden table with visible plank seams and grain. Ground: dark grass and soil in soft shade.
+IMAGE 3 (library): a very dark, heavy, polished mahogany library reading desk with a deep glossy finish and subtle grain. Floor: dark carpet in warm lamp light.
+IMAGE 4 (rooftop): a weathered grey concrete slab table on a rooftop terrace, fine concrete texture with tiny pores, slightly slippery look. Floor: dark rooftop tiles in sunset ambient light.
+------------------------------------------------------------
+
+==============================================================
+B. মেনু ব্যাকগ্রাউন্ড — bg_campus.jpg
+==============================================================
+মাপ: 1920 x 1080 px।
+কোথায় কী বসবে (UI):
+  - উপরের পাট্টি Y 0–195 px: প্লেয়ার কার্ড, র‍্যাংক, কয়েন (পুরো প্রস্থ)
+  - বাম-মাঝে X 330–1215, Y 195–1080: চরিত্র (hero_boy) দাঁড়াবে
+  - ডান অর্ধেক X 930–1875, Y 225–960: তিনটি বড় মোড বাটন
+  - নিচে Y 975–1065, X 600–1450: নেভিগেশন বার
+ছবির পরিকল্পনা:
+  - উজ্জ্বল ফোকাস: বাম-মাঝে (X 200–900) বড় গাছ ও সোনালি রোদ।
+  - ডান অর্ধেক (X 930–1920): নরম, ঝাপসা, কম কনট্রাস্ট ক্যাম্পাস ভবন (বাটন যেন পরিষ্কার দেখা যায়)।
+  - হরাইজন লাইন Y ≈ 600 px। নিচের 20% (Y > 860) ঝাপসা মাটি/ডেস্কের কিনারা।
+PROMPT:
+------------------------------------------------------------
+Ultra-detailed semi-realistic stylized game background, exactly 1920x1080 px, 16:9. A Bangladeshi university campus (KYAU University) in warm golden-hour light. Left-center (x 200-900px): a large green tree with sun rays as the bright focal point. Right half (x 930-1920px): a softly blurred, low-contrast red-brick and cream university building with a flag pole, very low detail so UI buttons stay readable. A few tiny blurred students with backpacks in the far background. Horizon line at y=600px. Bottom 20% (y>860px): blurred ground / edge of a wooden desk. Shallow depth of field. NO text, NO logos, NO UI, NO people in the foreground.
+------------------------------------------------------------
+
+==============================================================
+C. স্প্ল্যাশ ব্যাকগ্রাউন্ড — bg_splash.jpg
+==============================================================
+মাপ: 1920 x 1080 px।
+MAP:
+  - লোগো এলাকা: X 600–1320, Y 100–545 (ফাঁকা, ঝাপসা গাছ/আকাশ থাকবে)
+  - চক বৃত্ত (কেন্দ্র X 945, Y 830, প্রস্থ ≈ 520, উচ্চতা ≈ 170): ডেস্কের মাঝখানে, সাদা চক দিয়ে আঁকা। বৃত্তের ভেতরে কোনো পেন নয় (পেন আমি বসাব)।
+  - বই (৩টি, স্পাইনে লেখা নেই): বাম দিকে X 90–460, Y 610–930
+  - দলা কাগজ: ডানে X 1720–1860, Y 600–740
+  - চকের হাসিমুখ কাঠির মানুষ: নিচে-বামে X 150–330, Y 960–1080 (এলাকা কেটে যেতে পারে)
+  - নিচের Y 940–1080 অংশে শুধু ডেস্কের কাঠ (লোডিং বার ও লেখা বসবে)
+PROMPT:
+------------------------------------------------------------
+Cinematic still-life, exactly 1920x1080 px, 16:9. A worn wooden school desk in front of a blurred university campus (trees, red-brick building, students with backpacks far behind). Desk surface occupies the bottom 45% (y>600px). Draw a hand-drawn white chalk ellipse centered at x=945,y=830px, about 520px wide and 170px tall, EMPTY inside. A stack of three old hardcover textbooks (spines completely BLANK) at the left, x 90-460px, y 610-930px. A crumpled white paper ball at the right, x 1720-1860px, y 600-740px. Small chalk doodles: a smiling stick figure at x 150-330px, y 960-1080px, a small paper plane and a small Bangladesh flag near the chalk circle. The area x 600-1320px, y 100-545px is empty blurred sky and tree leaves (a logo goes there later). The strip y>940px is plain wood. NO pens, NO notepad, NO people, NO text.
+------------------------------------------------------------
+
+==============================================================
+D. চরিত্র — hero_boy.png / hero_boy_win.png / hero_rival_lose.png
+==============================================================
+মাপ: 1024 x 1536 px (2:3 লম্বা)। স্বচ্ছ বা সলিড #00FF00 সবুজ ব্যাকগ্রাউন্ড (আমি মুছব)।
+MAP:
+  - চরিত্র ছবির মাঝখানে, উপরে 3% ফাঁকা (মাথার ওপর), কোমর পর্যন্ত দেখা যাবে, নিচের কিনারা কোমরে কাটা।
+  - মাথার উপরিভাগ Y ≈ 45 px, কাঁধের প্রস্থ ≈ 70% (X 150–870)।
+  - হাত বুকের কাছে ক্রস করা (hero_boy), একটি মুঠো উপরে (hero_boy_win)।
+গেমে এগুলো উচ্চতা ≈ 640px (হোম), 560px (রেজাল্ট) দেখাবে।
+
+==============================================================
+E. পেন — pen_blue / red / gold / green / silver / neon (.png)
+==============================================================
+মাপ: 1920 x 1080 px, সলিড #00FF00 সবুজ ব্যাকগ্রাউন্ডে (আমি মুছে ছোট করব)।
+MAP: পেন একদম আনুভূমিক, ছবির কেন্দ্রে (কেন্দ্র X 960, Y 540), প্রস্থ ≈ 1650 px (86%), নিব বাঁ দিকে, ক্লিপ উপরে, ছায়া নেই, সবুজ প্রতিফলন নেই।
+
+==============================================================
+F. লোগো — logo.png
+==============================================================
+মাপ: 1536 x 1024 px, সলিড #00FF00 সবুজ ব্যাকগ্রাউন্ডে। লোগো ফ্রেমের 90% প্রস্থ জুড়ে, কেন্দ্রে। (প্রম্পট IMAGE-PROMPTS.txt এ আছে, আগের লোগোটাই ভালো আছে)
+
+==============================================================
+G. অবতার — av_boy / girl / glasses / cap / rafid (.jpg)
+==============================================================
+মাপ: 1024 x 1024 px (1:1)। মুখ কেন্দ্রে, মাথার উপরে 12% ফাঁকা, কাঁধ নিচের কিনারা পর্যন্ত।
+
+==============================================================
+A2. (নতুন, এটাই ব্যবহার করুন) বেঞ্চ + চারপাশের পুরো দৃশ্যসহ ছবি
+==============================================================
+উপরের A অংশের "গাঢ় মেঝে" নিয়ম বাতিল। এখন বেঞ্চের চারপাশে পুরো আসল পরিবেশ থাকবে।
+ফাইল ও বেঞ্চের জায়গা আগের মতোই: বাম X=189, ডান X=1731, উপর Y=242, নিচ Y=989 (1920x1080)।
+উপরের 0-240px পাট্টিতে স্কোরবোর্ড বসবে, তাই ওখানে দৃশ্য থাকবে কিন্তু কম কনট্রাস্ট ও কম ডিটেইলের।
+
+একসাথে 4টার PROMPT:
+------------------------------------------------------------
+Generate 4 SEPARATE images (do not combine them), each exactly 1920x1080 pixels, 16:9 landscape.
+
+COMMON RULES: Ultra-detailed photorealistic game environment, seen from a high TOP-DOWN camera (looking straight down, 90 degrees, no perspective tilt). In the CENTER lies one perfectly straight, un-rotated rectangular bench/table top whose top surface occupies EXACTLY: left edge x=189px, right edge x=1731px, top edge y=242px, bottom edge y=989px (9.8%-90.2% of width, 22.4%-91.5% of height), with a thin darker side-thickness strip below it from y=989px to y=1013px. All four bench edges are sharp, straight and clearly visible. The bench surface itself is completely EMPTY and clean: NO pens, NO objects, NO marks, NO lines, NO chalk, NO paper, NO text. The WHOLE area around the bench (the outer frame) shows the full real environment of the place, rich in realistic detail, soft warm lighting with natural shadows cast by the bench onto the floor. The strip above the bench (y 0-240px) shows the environment too but calmer and darker with low contrast. NO people, NO text, NO logos anywhere. The bench must be in exactly the same position and size in all 4 images.
+
+IMAGE 1 (classroom): bench = old honey-brown wooden classroom desk with natural grain. Surroundings seen from above: wooden classroom floor, rows of other wooden desks and benches at the left and right edges, a few school bags and chairs, sunlight patches from windows on the floor.
+IMAGE 2 (campus): bench = smooth varnished light-brown outdoor campus wooden table with plank seams. Surroundings: green lawn and stone path of a university campus, fallen leaves, tree shadows on the grass, a stone bench and a few bicycles at the far left/right edges, sunset light.
+IMAGE 3 (library): bench = dark polished mahogany library reading desk. Surroundings: dark patterned carpet, other reading desks and wooden chairs at the left and right edges, a green banker lamp's warm glow spilling on the floor, a few books stacked on the floor corners.
+IMAGE 4 (rooftop): bench = weathered grey concrete slab table. Surroundings: rooftop terrace tiles, a metal railing and potted plants at the edges, city rooftops far below at the corners, orange-purple sunset light and long shadows.
+------------------------------------------------------------

@@ -1,0 +1,100 @@
+<!doctype html><html lang="bn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PEN FIGHT — Gameplay</title><link rel="stylesheet" href="../assets/pen.css"><script src="../assets/pen.js"></script>
+<style>
+.hud{position:absolute;top:20px;width:440px;height:130px;clip-path:polygon(0 0,95% 0,100% 18%,100% 100%,5% 100%,0 82%)}
+.hud .in{position:absolute;inset:4px;clip-path:polygon(0 0,95% 0,100% 18%,100% 100%,5% 100%,0 82%)}
+.hn{position:absolute;font:700 25px var(--f-latin)}
+.hl{position:absolute;font:600 22px var(--f-latin)}
+.sq2{position:absolute;width:70px;height:70px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#4a5578,#141a34 70%);border:3px solid rgba(190,205,255,.5);display:grid;place-items:center;box-shadow:0 5px 10px rgba(0,0,0,.5);cursor:pointer}
+.sq2 svg{width:50%;height:50%}
+.ab{position:absolute;top:812px;width:118px;height:92px;border-radius:20px;border:4px solid;display:grid;place-items:center;box-shadow:0 0 14px currentColor;cursor:pointer}
+.ab svg{width:56%;height:56%}
+.ab b{position:absolute;right:8px;bottom:2px;font:800 24px var(--f-latin);color:#fff;text-shadow:0 2px 2px #000}
+.rb{position:absolute;border-radius:50%;display:grid;place-items:center;border:5px solid #3ad0ff;background:radial-gradient(circle at 40% 30%,#2a3c78,#0a1030 75%);box-shadow:0 0 20px #2ac8ff,inset 0 0 20px rgba(60,200,255,.4);cursor:pointer}
+.rb svg{width:52%;height:52%}
+</style></head>
+<body>
+<div class="stage" data-w="1672" data-h="941">
+<div data-scene="day"></div>
+<!-- desk + board -->
+<svg class="a" style="left:0;top:0;width:1672px;height:941px" viewBox="0 0 1672 941">
+<defs>
+<pattern id="ln" width="10" height="14" patternUnits="userSpaceOnUse"><path d="M0 13h10" stroke="#8aa4e0" stroke-width="1.2" opacity=".7"/></pattern>
+<pattern id="ht" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(40)"><path d="M0 0v7" stroke="#2a46b0" stroke-width="1.6" opacity=".8"/></pattern>
+<linearGradient id="pap" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e4e8f6"/><stop offset="1" stop-color="#f6f4fb"/></linearGradient>
+</defs>
+<polygon points="325,312 1385,312 1520,830 200,830" fill="url(#pap)" stroke="#c6cce6" stroke-width="3"/>
+<polygon points="325,312 1385,312 1520,830 200,830" fill="url(#ln)"/>
+<polygon points="200,830 1520,830 1535,858 190,858" fill="#c9cfe8"/>
+<g stroke="#1f3fb8" stroke-width="3" fill="none" stroke-linejoin="round">
+ <polygon points="560,360 670,360 662,408 556,408" fill="url(#ht)"/><polygon points="556,408 662,408 663,414 555,414"/>
+ <polygon points="428,424 528,424 512,530 416,530" fill="url(#ht)"/>
+ <ellipse cx="992" cy="380" rx="44" ry="22" fill="url(#ht)"/>
+ <polygon points="1140,482 1224,482 1252,596 1160,596" fill="url(#ht)"/>
+ <polygon points="1006,620 1140,620 1150,690 1012,690" fill="url(#ht)"/>
+ <ellipse cx="748" cy="680" rx="58" ry="28" fill="url(#ht)"/>
+ <path d="M848 345v110M848 590v130" stroke-dasharray="6 6"/><path d="M846 348l-6 14 6-4 6 4zM850 720l-6-14 6 4 6-4z" fill="#1f3fb8"/>
+ <ellipse cx="840" cy="510" rx="150" ry="82" stroke-dasharray="9 8"/>
+ <path d="M844 462l22 48 52 4-40 28 12 50-46-28-46 28 12-50-40-28 52-4z" fill="#eef0fa" stroke-width="3.5"/>
+ <path d="M1310 580c0 40 40 56 52 60 12-4 52-20 52-60z" stroke-width="2.5"/><text x="1362" y="600" text-anchor="middle" font-size="18" font-weight="800" fill="#1f3fb8" stroke="none" font-family="Poppins">KYAU</text>
+</g>
+<text x="362" y="352" font-family="Caveat" font-size="30" fill="#1f3fb8" transform="rotate(-8 362 352)">Pen Fight</text>
+<!-- aim line -->
+<path d="M960 468L1130 420" stroke="#ff3a3a" stroke-width="3" stroke-dasharray="10 8" fill="none"/>
+<path d="M700 530L890 500" stroke="#3a8aff" stroke-width="3" stroke-dasharray="9 8" fill="none" opacity=".8"/>
+<ellipse cx="1170" cy="412" rx="50" ry="22" fill="none" stroke="#fff" stroke-width="4" style="filter:drop-shadow(0 0 8px #ff4a4a)"/>
+<ellipse cx="380" cy="690" rx="68" ry="30" fill="none" stroke="#fff" stroke-width="4" style="filter:drop-shadow(0 0 8px #3a8aff)"/>
+<path d="M300 660c-30-40 30-76 100-70" stroke="#3ad0ff" stroke-width="5" fill="none" style="filter:drop-shadow(0 0 6px #3ad0ff)"/>
+</svg>
+<div data-books style="left:-20px;top:240px;transform:scale(.95);transform-origin:left top"></div>
+<div class="a" style="left:1404px;top:206px;width:170px;height:170px;border-radius:20px 20px 26px 26px;background:linear-gradient(90deg,#d8d8e0,#fff 40%,#c8c8d4);box-shadow:0 8px 14px rgba(0,0,0,.5);text-align:center;font:800 36px/1.05 var(--f-latin);color:#1a3a9a;padding-top:46px;transform:rotate(3deg)">KYAU<br>CSE<div class="a" style="right:-38px;top:30px;width:50px;height:90px;border:12px solid #d8d8e0;border-left:0;border-radius:0 40px 40px 0"></div></div>
+<div data-crumple style="left:1480px;top:420px;width:150px;height:140px"></div>
+<div data-pen="blue" data-label="KYAU" style="left:340px;top:506px;width:350px;transform:rotate(-28deg);filter:drop-shadow(0 0 14px #2a7cff)"></div>
+<div data-pen="red" style="left:1112px;top:260px;width:320px;transform:rotate(-55deg);filter:drop-shadow(0 0 14px #ff3a3a)"></div>
+<!-- HUD -->
+<div class="hud" style="left:34px;background:linear-gradient(#4a9aff,#1a4ad8);filter:drop-shadow(0 0 10px #2a7cff)"><div class="in" style="background:linear-gradient(90deg,#06164a,#0e3080)"></div></div>
+<div class="avatar" style="left:38px;top:24px;width:124px;height:124px;border:0;border-radius:0;background:none;box-shadow:none"><div data-av="boyT" style="position:absolute;inset:0"></div></div>
+<span class="flag a" style="left:190px;top:34px;font-size:22px"></span><div class="hn" style="left:224px;top:28px">PenFighterBD</div>
+<div class="hl" style="left:190px;top:66px;font-size:22px"><b style="color:#f33;font-size:14px">●</b> Lv. 12</div>
+<b class="a" style="left:186px;top:94px;width:48px;height:50px;background:linear-gradient(#e8963c,#8a4a14);clip-path:polygon(50% 0,100% 18%,100% 72%,50% 100%,0 72%,0 18%);display:grid;place-items:center;color:#ffd878"><i data-i="star" style="width:22px;height:22px"></i></b>
+<div class="hl" style="left:244px;top:100px;font-size:21px">Bronze III</div><i data-i="trophy" class="a" style="left:340px;top:98px;width:30px;height:30px"></i><div class="hl" style="left:376px;top:100px;font-size:21px">1,250</div>
+<div class="hud" style="left:1198px;background:linear-gradient(#ff6a88,#c02a50);filter:drop-shadow(0 0 10px #ff3a58);transform:scaleX(-1)"><div class="in" style="background:linear-gradient(90deg,#4a0a1e,#8a1a40)"></div></div>
+<div class="avatar" style="left:1508px;top:24px;width:124px;height:124px;border:0;border-radius:0;background:none;box-shadow:none"><div data-av="rafid" style="position:absolute;inset:0"></div></div>
+<span class="flag a" style="left:1296px;top:34px;font-size:22px"></span><div class="hn" style="left:1334px;top:28px">RafidPlays</div>
+<div class="hl" style="left:1420px;top:66px;font-size:22px">Lv. 14</div>
+<b class="a" style="left:1240px;top:94px;width:48px;height:50px;background:linear-gradient(#e0e6f0,#7a8498);clip-path:polygon(50% 0,100% 18%,100% 72%,50% 100%,0 72%,0 18%);display:grid;place-items:center;color:#fff"><i data-i="star" style="width:22px;height:22px"></i></b>
+<div class="hl" style="left:1296px;top:100px;font-size:21px">Silver II</div><i data-i="trophy" class="a" style="left:1390px;top:98px;width:30px;height:30px"></i><div class="hl" style="left:1426px;top:100px;font-size:21px">1,480</div>
+<!-- scoreboard -->
+<div class="a" style="left:596px;top:20px;width:240px;height:120px;background:linear-gradient(#3a80ff,#1a44c8);clip-path:polygon(0 0,100% 0,88% 100%,6% 82%);filter:drop-shadow(0 4px 8px #0008)"></div>
+<div class="a" style="left:836px;top:20px;width:240px;height:120px;background:linear-gradient(#ff4a60,#c0162c);clip-path:polygon(0 0,100% 0,94% 82%,12% 100%);filter:drop-shadow(0 4px 8px #0008)"></div>
+<div class="a num" style="left:640px;top:38px;font:800 68px var(--f-latin);text-shadow:0 3px 0 #0a1a52">2</div><div class="a num" style="left:980px;top:38px;font:800 68px var(--f-latin);text-shadow:0 3px 0 #5a0010">1</div>
+<div class="a" style="left:708px;top:8px;width:256px;height:154px;background:linear-gradient(#15172e,#0a0c1c);clip-path:polygon(7% 0,93% 0,100% 100%,0 100%);text-align:center;border-bottom:3px solid #ffc61a"></div>
+<div class="a" style="left:708px;top:14px;width:256px;text-align:center;font:700 29px var(--f-latin);color:#ffd324">1v1 Pen Fight</div>
+<div class="a" style="left:708px;top:62px;width:256px;text-align:center;font:600 26px var(--f-latin)">Round 3/5</div>
+<div class="a" style="left:740px;top:100px;width:190px;height:50px;border-radius:25px;background:rgba(8,10,24,.9);font:700 38px/50px var(--f-latin);text-align:center;padding-left:34px"><i data-i="clock" class="a" style="left:18px;top:8px;width:34px;height:34px"></i>01:24</div>
+<!-- side controls -->
+<div class="sq2" data-go="s14" style="left:28px;top:186px;width:64px;height:64px"><i data-i="pause" style="width:50%;height:50%"></i></div>
+<div class="sq2" data-toast="সাউন্ড" style="left:28px;top:268px;width:64px;height:64px"><i data-i="speaker" style="width:55%;height:55%"></i></div>
+<div class="sq2" data-toast="ভয়েস চ্যাট" style="left:28px;top:352px;width:64px;height:64px"><i data-i="mic" style="width:50%;height:50%"></i></div>
+<div class="a" style="left:1582px;top:172px;width:72px;height:286px;border-radius:36px;background:rgba(14,20,46,.9);border:2px solid rgba(160,185,255,.5);text-align:center;font-size:42px;line-height:68px;padding-top:6px"><div data-toast="👍">👍</div><div data-toast="😆">😆</div><div data-toast="😮">😮</div><div data-toast="চ্যাট" style="font-size:36px">💬</div></div>
+<!-- joystick -->
+<div class="a" style="left:28px;top:624px;width:252px;height:252px;border-radius:50%;background:radial-gradient(circle,rgba(40,50,80,.7),rgba(10,14,34,.8));border:6px solid rgba(190,205,255,.4);box-shadow:0 8px 16px rgba(0,0,0,.5)"></div>
+<div class="a" style="left:104px;top:700px;width:100px;height:100px;border-radius:50%;background:radial-gradient(circle at 40% 30%,#4a6aa8,#162040);border:6px solid #3ad0ff;box-shadow:0 0 18px #2ac8ff"></div>
+<div class="a" style="left:128px;top:640px;color:#cfd8ee"><i data-i="down" style="width:50px;height:34px;transform:rotate(180deg)"></i></div>
+<div class="a" style="left:128px;top:828px;color:#cfd8ee"><i data-i="down" style="width:50px;height:34px"></i></div>
+<div class="a" style="left:40px;top:722px;color:#cfd8ee"><i data-i="back" style="width:30px;height:50px"></i></div>
+<div class="a" style="left:236px;top:722px;color:#cfd8ee"><i data-i="fwd" style="width:30px;height:50px"></i></div>
+<!-- abilities -->
+<div class="ab" style="left:564px;border-color:#3ad0ff;color:#3ad0ff;background:linear-gradient(#1a3c9a,#0a1450)"><i data-i="bolt" data-c="#6ae0ff"></i><b>x2</b></div>
+<div class="ab" style="left:704px;border-color:#ffc61a;color:#ffc61a;background:linear-gradient(#5a4210,#2a1c04)"><i data-i="shield" data-c="#ffc61a"></i><b>x1</b></div>
+<div class="ab" style="left:846px;border-color:#ffc61a;color:#ffc61a;background:linear-gradient(#5a4210,#2a1c04)"><i data-i="target" data-c="#ffc61a"></i><b>x1</b></div>
+<div class="ab" style="left:988px;border-color:#b06aff;color:#b06aff;background:linear-gradient(#3a1a7a,#1a0a40)"><i data-i="sparkle" data-c="#d8a0ff"></i><b>x1</b></div>
+<!-- action buttons -->
+<div class="rb" style="left:1498px;top:572px;width:134px;height:134px"><i data-i="rocket" data-c="#e8f0ff"></i></div>
+<div class="rb" style="left:1368px;top:652px;width:108px;height:108px"><i data-i="shield" data-c="#cfd8ee"></i></div>
+<div class="rb" style="left:1346px;top:776px;width:106px;height:106px"><i data-i="up2" data-c="#ffc61a" style="transform:rotate(90deg)"></i></div>
+<div class="rb" style="left:1486px;top:736px;width:144px;height:144px"><i data-i="target" data-c="#e8f0ff"></i></div>
+<div class="a" style="left:10px;top:918px;width:200px;height:20px;font:500 12px var(--f-latin);opacity:.0" data-go="s15">result</div>
+</div>
+<script>document.addEventListener('keydown',e=>{if(e.key==='Enter')PF.go('s15')})</script>
+</body></html>

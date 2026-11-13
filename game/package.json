@@ -1,0 +1,27 @@
+{
+  "name": "pen-fight",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview --host",
+    "android:add": "cap add android",
+    "android:sync": "vite build && cap sync android",
+    "android:open": "cap open android",
+    "release": "node scripts/release.cjs",
+    "web": "node scripts/web.cjs"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.1.2",
+    "@capacitor/core": "^6.1.2",
+    "@capgo/capacitor-updater": "^6.53.0",
+    "phaser": "^3.80.1"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^6.1.2",
+    "adm-zip": "^0.6.1",
+    "vite": "^5.4.8"
+  }
+}

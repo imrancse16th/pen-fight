@@ -1,0 +1,29 @@
+PEN FIGHT - upload to pen.devimran.my.id  (cPanel -> public_html)
+
+1) DATABASE (once): phpMyAdmin -> devimran_pen -> Import -> api\schema.sql
+   (do not import an XAMPP export)
+
+2) ZIP these items (WinRAR: select them -> Add to archive -> ZIP), and upload + Extract in public_html:
+     .htaccess
+     index.html
+     manifest.webmanifest
+     icon-192.png
+     icon-512.png
+     assets\
+     img\
+     sfx\          (sounds and voices)
+     api\         (inside: delete config.local.php before zipping - it is for XAMPP only)
+     admin\
+     update\
+
+   DO NOT zip: game\  server\  app\  docs\  "Pen Fight Game UI Ida Image"\  PenFight-debug.apk
+
+3) CHECK:  http://pen.devimran.my.id/api/index.php?a=ping   ->  {"ok":true,...,"db":true}
+   GAME:   http://pen.devimran.my.id/
+   ADMIN:  http://pen.devimran.my.id/admin/
+
+After changing the game: in game\ run  npm run web  (rebuilds and refreshes index.html, assets\, img\ here), then zip again.
+
+QUICK WAY: the file deploy/pen-live-upload.zip is already made (game rebuilt, config.local.php left out).
+  cPanel -> File Manager -> public_html -> Upload -> pen-live-upload.zip -> Extract (overwrite).
+  Then open the site with Ctrl+Shift+R (phones: close the tab and open it again) so the old version is not shown.

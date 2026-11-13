@@ -1,0 +1,57 @@
+<!doctype html><html lang="bn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PEN FIGHT — Private Room</title><link rel="stylesheet" href="../assets/pen.css"><script src="../assets/pen.js"></script>
+<style>
+.row{position:absolute;left:310px;width:520px;height:60px;font:700 23px/60px var(--f-ui)}
+.row i{position:absolute;left:0;top:14px;width:32px;height:32px;color:#d8dcec}
+.row span{position:absolute;left:50px}
+.in{position:absolute;height:44px;border-radius:12px;background:linear-gradient(#2a2f40,#1a1e2c);border:2px solid #7c84a0;font:600 22px/40px var(--f-latin);padding:0 16px;box-shadow:inset 0 3px 6px rgba(0,0,0,.5)}
+.lk{display:inline-flex;gap:10px;align-items:center}
+.lk svg{width:22px;height:22px}
+</style></head>
+<body>
+<div class="stage" data-w="1536" data-h="1024">
+<div data-scene="day"></div>
+<div class="cbtn" data-go="s05" style="left:22px;top:26px;width:76px;height:76px;color:#fff"><i data-i="back" style="width:50%;height:50%"></i></div>
+<div data-logo style="--w:180px;left:140px;top:4px"></div>
+<div class="banner" style="left:520px;top:30px;width:460px;height:84px"><div class="in" style="background:linear-gradient(180deg,#14307f,#071546);border:0;box-shadow:none;height:100%;font:800 54px var(--f-disp);color:#ffd324;display:flex;align-items:center;justify-content:center;gap:14px;padding:0"><i data-i="users" data-c="#ffc61a" style="width:50px;height:50px"></i>প্রাইভেট রুম</div></div>
+<div class="sub" style="left:530px;width:440px;top:120px;font-size:22px;font-weight:700;background:none;text-shadow:0 2px 3px #000">বন্ধুদের সাথে নিজের রুমে খেলো!</div>
+<div data-cur data-x="1022" data-y="18" data-gap="214" style="--k:1"></div>
+<div class="a hand" style="display:none"></div>
+<div data-hero="x" class="a" style="left:-40px;top:190px;width:400px;height:640px;overflow:hidden"></div>
+<!-- create room panel -->
+<div class="panel gold" style="left:278px;top:186px;width:566px;height:600px;border-radius:30px"></div>
+<div class="a" style="left:280px;top:188px;width:562px;height:84px;border-radius:28px 28px 0 0;background:linear-gradient(#232a44,#141a2e);border-bottom:2px solid rgba(255,200,40,.4)"></div>
+<b class="a" style="left:354px;top:204px;width:52px;height:52px;border-radius:50%;background:#ffc61a;color:#2a1500;display:grid;place-items:center"><i data-i="plus" style="width:60%;height:60%"></i></b>
+<div class="a" style="left:430px;top:200px;font:800 38px/60px var(--f-disp);color:#ffd324">নতুন রুম তৈরি করুন</div>
+<div class="row" style="top:278px"><i data-i="users"></i><span>রুমের নাম</span><i data-i="edit" style="left:470px"></i></div>
+<div class="in" style="left:482px;top:322px;width:328px">Team RoyalBD</div>
+<div class="row" style="top:386px"><i data-i="gamepad"></i><span>ম্যাচ টাইপ</span></div>
+<div class="btn y" style="left:488px;top:395px;width:158px;height:46px;font-size:22px;border-radius:14px">ক্যাসুয়াল <i data-i="check"></i></div>
+<div class="btn d" style="left:660px;top:395px;width:154px;height:46px;font-size:22px;border-radius:14px">কাস্টম</div>
+<div class="row" style="top:466px"><i data-i="users"></i><span>সর্বোচ্চ প্লেয়ার</span></div>
+<div class="btn y" style="left:488px;top:476px;width:122px;height:44px;font-size:24px;border-radius:14px">2 <i data-i="check"></i></div>
+<div class="btn d" style="left:624px;top:476px;width:90px;height:44px;font-size:24px;border-radius:14px">4 <i data-i="lock"></i></div>
+<div class="btn d" style="left:728px;top:476px;width:90px;height:44px;font-size:24px;border-radius:14px">6 <i data-i="lock"></i></div>
+<div class="row" style="top:536px"><i data-i="lock"></i><span>পাসওয়ার্ড (ঐচ্ছিক)</span></div>
+<div class="in" style="left:556px;top:546px;width:256px;height:46px;letter-spacing:6px;font-size:28px">•••••<i data-i="eye" class="a" style="right:12px;top:7px;width:30px;height:30px;color:#ccd"></i></div>
+<div class="row" style="top:604px"><i data-i="mic"></i><span>ভয়েস চ্যাট</span></div>
+<span class="toggle" style="left:730px;top:616px;width:80px;height:42px"></span>
+<div class="btn y" data-go="s17" style="left:334px;top:678px;width:448px;height:78px;font-size:38px"><i data-i="plus"></i>রুম তৈরি করুন</div>
+<!-- join -->
+<div class="panel" style="left:876px;top:204px;width:520px;height:560px;border-radius:30px;border-color:#4aa8ff"></div>
+<div class="a" style="left:878px;top:206px;width:516px;height:92px;border-radius:28px 28px 0 0;background:linear-gradient(#16347a,#0b1f56);border-bottom:2px solid #4aa8ff"></div>
+<i data-i="exit" class="a" style="left:988px;top:226px;width:54px;height:54px;color:#3ad0ff"></i>
+<div class="a" style="left:1070px;top:226px;font:800 36px/54px var(--f-disp);color:#7ae0ff">রুমে যোগ দিন</div>
+<div class="a" style="left:932px;top:316px;font:700 23px var(--f-ui)"><b class="num" style="font-size:30px;margin-right:12px"># </b>রুম কোড লিখুন</div>
+<div class="in" style="left:928px;top:364px;width:420px;height:64px;font-size:32px;line-height:60px;border-radius:12px;background:linear-gradient(#0a1230,#060b22);border-color:#cfd6ee;letter-spacing:1px">7F9K3D</div>
+<div class="btn w" data-toast="কপি হয়েছে" style="left:1284px;top:364px;width:68px;height:64px;border-radius:12px"><i data-i="copy" style="width:34px;height:34px"></i></div>
+<div class="btn b" data-go="s08" style="left:924px;top:460px;width:432px;height:74px;font-size:36px;border-radius:40px">রুমে যোগ দিন</div>
+<div class="a" style="left:934px;top:552px;width:410px;text-align:center;font:600 22px var(--f-ui)"><span class="a" style="left:0;top:14px;width:150px;height:2px;background:#3ad0ff"></span>অথবা<span class="a" style="right:0;top:14px;width:150px;height:2px;background:#3ad0ff"></span></div>
+<div class="panel dark" style="left:912px;top:606px;width:456px;height:112px;border-radius:20px;border-color:#4a6aa8"><i data-i="qr" class="a" style="left:30px;top:26px;width:60px;height:60px;color:#fff"></i><span class="a" style="left:110px;top:34px;font:700 25px var(--f-ui)">QR কোড স্ক্যান করুন</span><i data-i="qr" class="a" style="right:24px;top:26px;width:60px;height:60px;color:#fff;opacity:.9"></i></div>
+<div data-books style="left:-14px;top:760px;transform:scale(1);transform-origin:left top"></div>
+<div data-pen="blue" data-label="KYAU" style="left:420px;top:812px;width:520px;transform:rotate(-10deg)"></div>
+<div data-pen="red" style="left:780px;top:880px;width:470px;transform:rotate(11deg)"></div>
+<div data-crumple style="left:1380px;top:760px;width:160px;height:150px"></div>
+<div class="a hand" style="left:660px;top:930px;font-size:46px;transform:rotate(-6deg)">Pen Fight</div>
+</div>
+</body></html>

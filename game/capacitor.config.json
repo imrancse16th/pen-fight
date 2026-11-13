@@ -1,0 +1,18 @@
+{
+  "appId": "edu.kyau.penfight",
+  "appName": "Pen Fight",
+  "webDir": "dist",
+  "backgroundColor": "#0a1a52",
+  "android": {
+    "allowMixedContent": false
+  },
+  "server": {
+    "androidScheme": "http",
+    "cleartext": true
+  },
+  "plugins": {
+    "CapacitorUpdater": {
+      "autoUpdate": false
+    }
+  }
+}

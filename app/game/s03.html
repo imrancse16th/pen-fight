@@ -1,0 +1,68 @@
+<!doctype html><html lang="bn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PEN FIGHT — Create Profile</title><link rel="stylesheet" href="../assets/pen.css"><script src="../assets/pen.js"></script>
+<style>
+.step{position:absolute;top:186px;height:44px;border-radius:999px;display:flex;align-items:center;gap:8px;padding:0 12px 0 6px;font:700 20px var(--f-ui);background:linear-gradient(#323a58,#161c34);border:2px solid rgba(190,205,255,.5)}
+.step b{width:32px;height:32px;border-radius:50%;background:#10152a;display:grid;place-items:center;font:800 18px var(--f-ui);border:2px solid #aab}
+.step.on{background:linear-gradient(#ffe45c,#f5aa00);color:var(--ink);border-color:#fff3b0}.step.on b{background:#ffd324;border-color:#c68a00}
+.fld{position:absolute;left:530px;width:332px;height:50px;border-radius:10px;background:linear-gradient(#3b3f4c,#2a2d38);border:2px solid #70758a;font:600 24px/46px var(--f-latin);padding:0 16px;color:#fff;box-shadow:inset 0 3px 6px rgba(0,0,0,.45)}
+.lab{position:absolute;left:530px;font:800 25px/1 var(--f-disp);color:#2b1a08}
+.lico{position:absolute;left:476px;width:38px;height:38px;color:#222}
+.av5{position:absolute;top:1003px;width:146px;height:138px;border-radius:14px;overflow:hidden;border:3px solid rgba(220,220,235,.7);box-shadow:0 5px 10px rgba(0,0,0,.5);cursor:pointer}
+.av5.on{border:5px solid #ffc61a;box-shadow:0 0 14px rgba(255,200,0,.8)}
+.pc{position:absolute;top:1243px;width:178px;height:178px;border-radius:16px;background:linear-gradient(#5b5d66,#3b3d46);border:3px solid rgba(220,220,235,.35);text-align:center;font:600 20px/1.15 var(--f-ui);cursor:pointer}
+.pc.on{border:5px solid #ffc61a;box-shadow:0 0 14px rgba(255,200,0,.8)}
+.pc .pn{position:absolute;left:8px;right:8px;top:12px}
+.pc span{position:absolute;left:0;right:0;bottom:8px}
+.ok{position:absolute;right:-8px;bottom:-8px;width:40px;height:40px;border-radius:50%;background:#ffc61a;color:#222;display:grid;place-items:center;border:3px solid #fff3;z-index:3}
+.ok svg{width:60%;height:60%}
+</style></head>
+<body>
+<div class="stage" data-w="941" data-h="1672">
+<div data-scene="portrait"></div>
+<div class="a hand" style="left:12px;top:230px;width:70px;font:700 46px/1.15 var(--f-disp);color:#2a2a2a;text-shadow:none;text-align:center;opacity:.75">পেন<br>ফাইট<br>কিং</div>
+<div data-logo style="--w:180px;left:78px;top:14px"></div>
+<div class="paper-strip" style="left:285px;top:92px;width:445px;height:76px;font-size:38px">তোমার প্রোফাইল তৈরি করো</div>
+<div class="step on" style="left:170px;width:134px"><b>১</b>তথ্য</div>
+<div class="step" style="left:326px;width:130px"><b>২</b>অবতার</div>
+<div class="step" style="left:478px;width:176px"><b>৩</b>পেন নির্বাচন</div>
+<div class="step" style="left:668px;width:136px"><b>৪</b>সম্পন্ন</div>
+<div data-hero="x" class="a" style="left:-40px;top:300px;width:520px;height:830px"></div>
+<div data-crown style="left:128px;top:250px;width:100px;height:80px"></div>
+<!-- clipboard -->
+<div class="a" style="left:424px;top:262px;width:494px;height:650px;border-radius:20px;background:linear-gradient(#7a4a26,#4e2c12);box-shadow:0 12px 20px rgba(0,0,0,.5);border:3px solid #3a2010"></div>
+<div class="a" style="left:588px;top:240px;width:170px;height:52px;border-radius:14px;background:linear-gradient(#cfd3da,#7b8190);border:3px solid #444;box-shadow:0 4px 8px rgba(0,0,0,.5)"></div>
+<div class="a" style="left:446px;top:284px;width:450px;height:600px;background:linear-gradient(#f4e6c2,#e9d3a2);border-radius:6px;box-shadow:inset 0 0 30px rgba(120,70,10,.35)"></div>
+<div class="lico"style="top:310px"><i data-i="user" style="width:100%;height:100%"></i></div><div class="lab" style="top:315px">তোমার নাম লিখো</div>
+<div class="fld" style="top:350px">PenFighterBD<i data-i="edit" class="a" style="right:12px;top:10px;width:30px;height:30px"></i></div>
+<div class="lico" style="top:412px;font:800 36px/38px var(--f-latin);color:#222">@</div><div class="lab" style="top:415px">ইউজারনেম (ইউনিক)</div>
+<div class="fld" style="top:448px">penfighter_bd<b class="a" style="right:8px;top:8px;width:32px;height:32px;border-radius:50%;background:#1fb84f;display:grid;place-items:center;color:#fff"><i data-i="check" style="width:70%;height:70%"></i></b></div>
+<div class="lico" style="top:515px"><i data-i="pencil" style="width:100%;height:100%"></i></div><div class="lab" style="top:518px">বায়ো (ঐচ্ছিক)</div>
+<div class="fld" style="top:552px;height:84px;line-height:1.3;padding-top:12px;font-size:22px;font-family:var(--f-ui)">KYAU এর পেন ফাইটার! ✍<div class="a num" style="right:12px;bottom:6px;font-size:16px;color:#ccd">24/160</div></div>
+<div class="lico" style="top:655px"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7z" fill="#222"/><circle cx="12" cy="9" r="2.5" fill="#f4e6c2"/></svg></div><div class="lab" style="top:660px">তোমার দেশ</div>
+<div class="fld" style="top:695px;background:linear-gradient(#bdbdc2,#9a9aa2);color:#222;font-family:var(--f-ui);font-weight:700"><span class="flag" style="font-size:26px;margin-right:12px"></span>বাংলাদেশ<i data-i="down" class="a" style="right:12px;top:10px;width:30px;height:30px"></i></div>
+<div class="lico" style="top:768px;font:800 24px/38px var(--f-latin);color:#222">A<small>A</small></div><div class="lab" style="top:770px">ভাষা নির্বাচন করো</div>
+<div class="btn y" data-pick="lang" style="left:530px;top:805px;width:172px;height:50px;font-size:26px;border-radius:12px">বাংলা <i data-i="check"></i></div>
+<div class="btn d" data-pick="lang" style="left:716px;top:805px;width:150px;height:50px;font-size:24px;border-radius:12px;background:linear-gradient(#cfd0d6,#9a9ba5);color:#222;border-color:#fff7;font-family:var(--f-latin)">English</div>
+<!-- avatar board -->
+<div class="a" style="left:0;top:962px;width:941px;height:560px;background:linear-gradient(#4a2b17,#2e170a);border-top:6px solid #7b4a26;border-radius:60px 60px 0 0/40px 40px 0 0;box-shadow:0 -8px 20px rgba(0,0,0,.45)"></div>
+<div class="paper-strip" style="left:275px;top:930px;width:395px;height:62px;font-size:30px">অবতার নির্বাচন করো</div>
+<div class="a" style="left:48px;top:1050px;width:50px;height:50px;color:#fff"><i data-i="back" style="width:100%;height:100%"></i></div>
+<div class="a" style="left:868px;top:1050px;width:50px;height:50px;color:#fff"><i data-i="fwd" style="width:100%;height:100%"></i></div>
+<div class="av5 on" data-pick="av" style="left:120px"><div data-av="boy" style="position:absolute;inset:0"></div><b class="ok"><i data-i="check"></i></b></div>
+<div class="av5" data-pick="av" style="left:286px"><div data-av="girl" style="position:absolute;inset:0"></div></div>
+<div class="av5" data-pick="av" style="left:430px"><div data-av="glasses" style="position:absolute;inset:0"></div></div>
+<div class="av5" data-pick="av" style="left:574px"><div data-av="sun" style="position:absolute;inset:0"></div></div>
+<div class="av5" data-pick="av" style="left:718px"><div data-av="cap" style="position:absolute;inset:0"></div></div>
+<div class="paper-strip" style="left:248px;top:1163px;width:478px;height:62px;font-size:28px">তোমার প্রাথমিক পেন নির্বাচন করো</div>
+<div class="a" style="left:48px;top:1295px;width:50px;height:50px;color:#fff"><i data-i="back" style="width:100%;height:100%"></i></div>
+<div class="a" style="left:868px;top:1295px;width:50px;height:50px;color:#fff"><i data-i="fwd" style="width:100%;height:100%"></i></div>
+<div class="pc on" data-pick="pn" style="left:118px;width:196px;border:5px solid #ffc61a"><div class="pn"><div data-pen="blue" data-label="KYAU" style="width:170px;transform:rotate(-24deg) translateY(18px)"></div></div><span>ক্লাসিক ব্লু<br>(ব্যালান্সড)</span><b class="ok"><i data-i="check"></i></b></div>
+<div class="pc" data-pick="pn" style="left:330px"><div class="pn"><div data-pen="red" style="width:150px;transform:rotate(-24deg) translateY(18px)"></div></div><span>রেড স্টাইকার<br>(পাওয়ার)</span></div>
+<div class="pc" data-pick="pn" style="left:518px"><div class="pn"><div data-pen="black" style="width:150px;transform:rotate(-24deg) translateY(18px)"></div></div><span>ব্ল্যাক এডিশন<br>(কন্ট্রোল)</span></div>
+<div class="pc" data-pick="pn" style="left:706px"><div class="pn"><div data-pen="green" style="width:150px;transform:rotate(-24deg) translateY(18px)"></div></div><span>গ্রিন ফ্ল্যাশ<br>(স্পিড)</span></div>
+<div class="btn y" data-go="s04" style="left:228px;top:1450px;width:486px;height:94px;font-size:40px;border-radius:999px">প্রোফাইল তৈরি করুন <i data-i="chev"></i></div>
+<div data-books style="left:-20px;top:1450px;transform:scale(.62);transform-origin:left top"></div>
+<div data-crumple style="left:830px;top:1520px;width:130px;height:120px"></div>
+<div data-crown style="left:770px;top:1480px;width:90px;height:70px"></div>
+</div>
+</body></html>

@@ -1,0 +1,63 @@
+<!doctype html><html lang="bn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PEN FIGHT — Select Pen</title><link rel="stylesheet" href="../assets/pen.css"><script src="../assets/pen.js"></script>
+<style>
+.sm{position:absolute;left:310px;width:262px;height:62px;border-radius:14px;background:linear-gradient(#2a3768,#121c48);border:2px solid rgba(110,150,255,.4);font:700 27px/58px var(--f-ui);padding-left:76px;cursor:pointer}
+.sm i{position:absolute;left:24px;top:12px;width:38px;height:38px}
+.sm.on{background:linear-gradient(#ffe45c,#f5aa00);color:var(--ink);border-color:#fff3b0;clip-path:polygon(0 0,92% 0,100% 50%,92% 100%,0 100%)}
+.stl{position:absolute;left:1258px;width:380px;height:36px}
+.stl i{position:absolute;left:0;top:0;width:34px;height:34px}
+.stl span{position:absolute;left:52px;top:0;font:600 23px/36px var(--f-ui)}
+.stl .seg4{position:absolute;left:176px;top:7px;width:146px;height:22px;border-radius:5px;background:repeating-linear-gradient(90deg,#ffc61a 0 26px,transparent 26px 29px);overflow:hidden;box-shadow:0 0 0 2px rgba(255,255,255,.2)}
+.stl .seg4:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent var(--v,80%),rgba(20,28,60,.9) var(--v,80%))}
+.stl b{position:absolute;right:0;top:0;font:700 24px/36px var(--f-latin)}
+.pcd{position:absolute;top:566px;width:198px;height:186px;border-radius:18px;text-align:center;cursor:pointer;border:3px solid;overflow:hidden}
+.pcd .pp{position:absolute;left:10px;right:10px;top:36px}
+.pcd span:not(.tag){position:absolute;left:0;right:0;top:122px;font:700 23px var(--f-ui)}
+.pcd .tag{position:absolute;left:50%;bottom:8px;transform:translateX(-50%)}
+</style></head>
+<body>
+<div class="stage" data-w="1672" data-h="941">
+<div data-scene="day"></div>
+<div data-top data-title="পেন নির্বাচন" data-icon="pencil" data-sub="তোমার পছন্দের পেন নির্বাচন করো এবং ম্যাচে ব্যবহার করো!" data-back="s04" data-bx="545" data-bw="560"></div>
+<div data-hero="x" class="a" style="left:-60px;top:190px;width:420px;height:660px;overflow:hidden"></div>
+<div data-books style="left:-20px;top:700px"></div>
+<div data-crumple style="left:1490px;top:790px;width:150px;height:140px"></div>
+<!-- main panel -->
+<div class="panel" style="left:292px;top:194px;width:1360px;height:582px;border-radius:30px"></div>
+<div class="sm on" data-go="s10" style="top:206px"><i data-i="pencil" data-c="#2a1500"></i>আমার পেন</div>
+<div class="sm" data-go="s10" style="top:280px"><i data-i="crown" data-c="#fff"></i>পেন কালেকশন</div>
+<div class="sm" data-go="s10" style="top:348px"><i data-i="star"></i>স্কিন / লুক</div>
+<div class="sm" data-go="s12" style="top:414px"><i data-i="palette"></i>কাস্টমাইজ</div>
+<div class="sm" data-go="s11" style="top:482px"><i data-i="box"></i>আপগ্রেড</div><b class="dot" style="left:552px;top:478px;width:26px;height:26px;font:800 18px/20px sans-serif;text-align:center">!</b>
+<div class="a" style="left:712px;top:204px;font:800 40px var(--f-latin)">KYAU বু এডিশন</div><span class="tag epic a" style="left:988px;top:210px;padding:4px 26px;font-size:23px">Epic</span>
+<div class="a" style="left:612px;top:360px;width:50px;height:60px;color:#fff"><i data-i="back" style="width:100%;height:100%"></i></div>
+<div class="a" style="left:1160px;top:360px;width:50px;height:60px;color:#fff"><i data-i="fwd" style="width:100%;height:100%"></i></div>
+<div class="a" style="left:630px;top:488px;width:520px;height:70px;border-radius:50%;background:radial-gradient(ellipse,rgba(60,200,255,.95) 0,rgba(30,120,255,.6) 40%,rgba(30,60,200,.2) 70%);box-shadow:0 0 40px #2a9cff"></div>
+<div class="a" style="left:640px;top:496px;width:500px;height:48px;border-radius:50%;border:3px solid #7ae8ff;box-shadow:0 0 20px #2ac8ff"></div>
+<div class="a" style="left:690px;top:250px;width:520px;height:300px;background:radial-gradient(ellipse at 50% 70%,rgba(60,160,255,.55),transparent 65%)"></div>
+<div data-pen="blue" data-label="KYAU" class="float" style="left:690px;top:330px;width:500px;transform:rotate(-26deg)"></div>
+<!-- stats -->
+<div class="panel" style="left:1226px;top:206px;width:410px;height:334px;border-radius:24px;border-color:#4aa0ff"></div>
+<i data-i="bars" data-c="#2ac8ff" class="a" style="left:1306px;top:214px;width:44px;height:44px"></i><div class="a" style="left:1366px;top:208px;font:800 34px/60px var(--f-ui)">পেন স্ট্যাটাস</div>
+<div class="stl" style="top:278px"><i data-i="fist"></i><span>পাওয়ার</span><div class="seg4" style="--v:85%"></div><b>85</b></div>
+<div class="stl" style="top:316px"><i data-i="target"></i><span>অ্যাকুরেসি</span><div class="seg4" style="--v:80%"></div><b>80</b></div>
+<div class="stl" style="top:355px"><i data-i="bolt"></i><span>স্পিড</span><div class="seg4" style="--v:78%"></div><b>78</b></div>
+<div class="stl" style="top:394px"><i data-i="shield"></i><span>ডিউরেবিলিটি</span><div class="seg4" style="--v:90%"></div><b>90</b></div>
+<div class="panel pu" style="left:1240px;top:442px;width:384px;height:84px;border-radius:14px"></div>
+<b class="a" style="left:1252px;top:450px;width:70px;height:68px;border-radius:10px;background:linear-gradient(#a56bff,#6a2de0);display:grid;place-items:center;color:#ffd324"><i data-i="up2" style="width:70%;height:70%"></i></b>
+<div class="a" style="left:1340px;top:452px;font:700 25px var(--f-ui)">বিশেষ ক্ষমতা</div><div class="a" style="left:1340px;top:486px;font:600 20px var(--f-ui)">ঘর্ষণে বেশি গ্রিপ ও স্থিতিশীলতা!</div>
+<!-- list -->
+<div class="pcd" data-pick="pn" style="left:380px;border-color:#ffc61a;background:linear-gradient(#1a2a68,#0c1440);box-shadow:0 0 18px rgba(255,200,0,.7)"><div class="pp"><div data-pen="blue" data-label="KYAU" style="width:160px;transform:rotate(-24deg)"></div></div><span>KYAU বু</span><span class="tag epic">Epic</span><b class="a" style="right:6px;top:6px;width:36px;height:36px;border-radius:50%;background:#ffc61a;color:#111;display:grid;place-items:center"><i data-i="check" style="width:60%;height:60%"></i></b></div>
+<div class="pcd" data-pick="pn" style="left:590px;border-color:#a06aff;background:linear-gradient(#3a1a78,#1a0a48)"><div class="pp"><div data-pen="red" style="width:160px;transform:rotate(-24deg)"></div></div><span>রেড স্টাইকার</span><span class="tag rare">Rare</span></div>
+<div class="pcd" data-pick="pn" style="left:800px;border-color:#a88a3a;background:linear-gradient(#3a2a10,#150e04)"><div class="pp"><div data-pen="gold" style="width:160px;transform:rotate(-24deg)"></div></div><span>গোল্ড প্রিমিয়াম</span><span class="tag epic">Epic</span></div>
+<div class="pcd" data-pick="pn" style="left:1010px;border-color:#2ac07a;background:linear-gradient(#0a4a38,#06241c)"><div class="pp"><div data-pen="green" style="width:160px;transform:rotate(-24deg)"></div></div><span>ক্যাম্পাস গ্রিন</span><span class="tag grn">Rare</span></div>
+<div class="pcd" data-pick="pn" style="left:1220px;border-color:#8a96b0;background:linear-gradient(#3a4660,#1a2238)"><div class="pp"><div data-pen="silver" style="width:160px;transform:rotate(-24deg)"></div></div><span>ক্লাসিক সিলভার</span><span class="tag com">Common</span></div>
+<div class="pcd" data-pick="pn" style="left:1430px;border-color:#8a4aff;background:linear-gradient(#2a1458,#10062e)"><div class="pp" style="opacity:.35"><div data-pen="purple" style="width:160px;transform:rotate(-24deg)"></div></div><i data-i="lock" class="a" style="left:66px;top:46px;width:64px;height:64px;color:#fff"></i><span>লেজেন্ডারি পেন</span><span class="tag leg">Legendary</span></div>
+<!-- bottom buttons -->
+<div class="btn y" data-go="s13" style="left:468px;top:804px;width:434px;height:86px;font-size:38px"><i data-i="check"></i>এই পেন ব্যবহার করো</div>
+<div class="btn d" data-go="s11" style="left:928px;top:814px;width:206px;height:70px;font-size:28px"><i data-i="swords"></i>আপগ্রেড</div>
+<div class="btn d" data-go="s12" style="left:1150px;top:814px;width:226px;height:70px;font-size:28px"><i data-i="palette"></i>কাস্টমাইজ</div>
+<div data-pen="blue" data-label="KYAU" style="left:230px;top:850px;width:230px;transform:rotate(-14deg)"></div>
+<div data-pen="red" style="left:1400px;top:850px;width:230px;transform:rotate(18deg)"></div>
+</div>
+</body></html>

@@ -1,0 +1,77 @@
+<!doctype html><html lang="bn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PEN FIGHT — Home</title><link rel="stylesheet" href="../assets/pen.css"><script src="../assets/pen.js"></script>
+<style>
+.chipcard{position:absolute;border-radius:16px;background:linear-gradient(rgba(34,40,62,.95),rgba(14,18,36,.96));border:2px solid rgba(170,190,255,.45);box-shadow:0 6px 12px rgba(0,0,0,.5)}
+.qi{position:absolute;left:20px;width:102px;height:106px;border-radius:14px;background:linear-gradient(#2a3150,#10152c);border:2px solid rgba(170,190,255,.45);text-align:center;font:700 19px/1.1 var(--f-ui);box-shadow:0 6px 10px rgba(0,0,0,.5);cursor:pointer}
+.qi i{display:block;width:52px;height:52px;margin:10px auto 6px}
+.mode{position:absolute;border-radius:26px;box-shadow:0 8px 16px rgba(0,0,0,.5),inset 0 0 0 3px rgba(255,255,255,.35);overflow:hidden;cursor:pointer}
+.mode h3{position:absolute;font:800 38px/1.1 var(--f-disp)}
+.mode p{position:absolute;font:600 21px/1.25 var(--f-ui)}
+.mode .go{position:absolute;right:16px;width:80px;height:80px;border-radius:50%;display:grid;place-items:center}
+.mode .go svg{width:46%;height:46%}
+.tile{position:absolute;top:1055px;width:216px;height:126px;clip-path:polygon(12% 0,88% 0,100% 20%,100% 80%,88% 100%,12% 100%,0 80%,0 20%);background:linear-gradient(#ffd34a,#e69100);text-align:center;font:800 24px var(--f-disp);color:#3a1d00;cursor:pointer;box-shadow:inset 0 0 0 4px rgba(255,255,255,.35)}
+.tile i{display:block;width:70px;height:66px;margin:8px auto 0}
+.tile b{position:absolute;left:12px;right:12px;bottom:8px;height:30px;border-radius:8px;background:rgba(80,40,0,.7);color:#ffe9a8;font-size:23px;line-height:30px}
+.bn{position:absolute;top:1215px;height:98px;display:flex;flex-direction:column;align-items:center;justify-content:center;font:700 24px var(--f-ui);cursor:pointer}
+.bn i{width:48px;height:48px;display:block}
+</style></head>
+<body>
+<div class="stage sq" data-w="1182" data-h="1330">
+<div data-scene="sq"></div>
+<!-- top bar -->
+<div class="chipcard" style="left:18px;top:14px;width:316px;height:82px;border-color:#ffc61a;border-radius:18px">
+ <div class="avatar" style="left:4px;top:3px;width:70px;height:70px;border-width:3px;border-radius:12px"><div data-av="boy" style="position:absolute;inset:0"></div></div>
+ <div class="a" style="left:104px;top:10px;font:700 24px var(--f-latin)">PenFighterBD</div>
+ <div class="a num" style="left:104px;top:42px;font:700 21px var(--f-latin)">Lv. 12</div><div class="bar a" style="left:176px;top:46px;width:130px;height:16px"><u style="width:40%"></u></div></div>
+<div class="chipcard" style="left:348px;top:14px;width:264px;height:82px">
+ <b class="a" style="left:12px;top:8px;width:62px;height:66px;background:linear-gradient(#e8963c,#8a4a14);clip-path:polygon(50% 0,100% 18%,100% 72%,50% 100%,0 72%,0 18%);display:grid;place-items:center;color:#ffd878"><i data-i="star" style="width:30px;height:30px"></i></b>
+ <div class="a" style="left:100px;top:6px;font:700 23px var(--f-latin)">Bronze III</div>
+ <div class="bar a" style="left:92px;top:40px;width:164px;height:26px"><u style="width:85%"></u><span class="a num" style="left:0;right:0;top:0;text-align:center;font:700 16px/22px var(--f-latin);color:#fff;text-shadow:0 1px 2px #000">1,250 / 1,400</span></div></div>
+<div data-cur data-x="642" data-y="28" data-gap="200" data-nohome></div>
+<div class="cbtn" data-go="s38" style="left:1018px;top:26px;width:58px;height:58px;border-radius:18px;color:#fff"><i data-i="bell" style="width:60%;height:60%"></i></div><b class="dot" style="left:1062px;top:22px;width:18px;height:18px"></b>
+<div class="cbtn" data-go="s34" style="left:1096px;top:26px;width:58px;height:58px;border-radius:18px;color:#fff"><i data-i="mail" style="width:60%;height:60%"></i></div>
+<div data-logo style="--w:210px;left:78px;top:118px"></div>
+<!-- left quick icons -->
+<div class="qi" data-go="s20" style="top:310px"><i data-i="gift" data-c="#ffb300"></i>দৈনিক<br>পুরস্কার</div><b class="dot" style="left:104px;top:306px;width:18px;height:18px"></b>
+<div class="qi" data-go="s19" style="top:434px"><i data-i="calendar" data-c="#ffb300"></i>মিশন</div>
+<div class="qi" data-go="s19" style="top:552px"><i data-i="trophy"></i>অর্জন</div>
+<div class="qi" data-go="s37" style="top:670px"><i data-i="calendar" data-c="#e33"></i>ইভেন্ট</div><b class="dot" style="left:104px;top:666px;width:18px;height:18px"></b>
+<!-- season -->
+<div class="a" style="left:710px;top:140px;width:446px;height:130px;background:linear-gradient(100deg,#4a1f9a,#7a2fd8 55%,#5a22b8);clip-path:polygon(0 0,95% 0,100% 20%,96% 100%,0 100%);border-radius:18px;box-shadow:0 8px 14px rgba(0,0,0,.5)"></div>
+<div class="a" style="left:712px;top:142px;width:442px;height:126px;border:3px solid #ffc61a;clip-path:polygon(0 0,95% 0,100% 20%,96% 100%,0 100%);border-radius:18px"></div>
+<i data-i="trophy" class="a" style="left:752px;top:154px;width:100px;height:100px;filter:drop-shadow(0 4px 6px #0008)"></i>
+<div class="a" style="left:882px;top:150px;font:800 24px var(--f-latin);font-style:italic;color:#ffd324">Season 1</div>
+<div class="a" style="left:882px;top:176px;font:800 36px var(--f-latin);font-style:italic">Campus Cup</div>
+<div class="a" style="left:872px;top:222px;width:260px;height:36px;border-radius:999px;background:rgba(15,10,50,.7);font:600 19px/36px var(--f-ui);padding-left:44px"><i data-i="clock" class="a" style="left:12px;top:6px;width:24px;height:24px"></i>শেষ হতে: <b style="color:#ffd324">18</b> দিন <b style="color:#ffd324">12</b> ঘন্টা</div>
+<!-- hero -->
+<div data-hero="x" class="a" style="left:90px;top:262px;width:430px;height:690px"></div>
+<div data-books style="left:-10px;top:860px;transform:scale(.96);transform-origin:left top"></div>
+<div data-pen="red" style="left:420px;top:960px;width:290px;transform:rotate(-4deg)"></div>
+<div class="a hand" style="left:560px;top:985px;font-size:40px;transform:rotate(-6deg);opacity:.7">Pen Fight</div>
+<!-- modes -->
+<div class="mode" data-go="s05" style="left:600px;top:362px;width:562px;height:190px;background:radial-gradient(ellipse at 20% 50%,#ffe46a,#f7b20f 60%,#e89500);border:3px solid #ffe9a0">
+ <svg class="a" style="left:30px;top:6px;width:170px;height:170px" viewBox="0 0 170 170"><g transform="rotate(35 85 85)"><rect x="12" y="73" width="146" height="20" rx="10" fill="#2f55d4" stroke="#0b1538" stroke-width="3"/></g><g transform="rotate(-35 85 85)"><rect x="12" y="73" width="146" height="20" rx="10" fill="#d52030" stroke="#0b1538" stroke-width="3"/></g><text x="85" y="108" text-anchor="middle" font-family="Lilita One" font-size="56" fill="#ffd324" stroke="#7a1a00" stroke-width="5" paint-order="stroke">VS</text></svg>
+ <h3 style="left:230px;top:38px;color:#2a1000">র‍্যান্ডম ম্যাচ</h3><p style="left:230px;top:92px;color:#2a1000;font-weight:700">অনলাইন খেলোয়াড়ের<br>সাথে খেলুন</p>
+ <div class="go" style="top:55px;background:#1a1405;color:#ffc61a;right:16px"><i data-i="play"></i></div></div>
+<div class="mode" data-go="s06" style="left:584px;top:570px;width:576px;height:146px;background:linear-gradient(100deg,#2b7be8,#1752c0);border:3px solid #bfe0ff">
+ <div class="a" style="left:6px;top:6px;width:230px;height:134px;overflow:hidden"><div class="a" style="left:-20px;top:-2px;width:150px;height:150px"><div data-av="laugh" style="position:absolute;inset:0"></div></div><div class="a" style="left:100px;top:-4px;width:150px;height:150px"><div data-av="glassesT" style="position:absolute;inset:0"></div></div></div>
+ <h3 style="left:236px;top:22px;font-size:34px">বন্ধুদের সাথে খেলুন</h3><p style="left:236px;top:80px">প্রাইভেট রুম তৈরি করুন</p>
+ <div class="go" style="top:34px;background:#5ab6ff;color:#0b2a6a;width:72px;height:72px"><i data-i="play"></i></div></div>
+<div class="mode" data-go="s13" style="left:566px;top:732px;width:590px;height:138px;background:linear-gradient(100deg,#7a3de0,#4c1fb0);border:3px solid #c9a8ff">
+ <svg class="a" style="left:46px;top:8px;width:170px;height:126px" viewBox="0 0 170 126"><rect x="40" y="26" width="90" height="70" rx="26" fill="#eef2ff"/><rect x="54" y="42" width="62" height="34" rx="14" fill="#1a2250"/><circle cx="74" cy="59" r="7" fill="#5ae0ff"/><circle cx="98" cy="59" r="7" fill="#5ae0ff"/><rect x="30" y="94" width="110" height="30" rx="14" fill="#cfd8ff"/><text x="85" y="116" text-anchor="middle" font-size="22" font-weight="800" fill="#3a2fd0" font-family="Poppins">vs AI</text><circle cx="85" cy="16" r="6" fill="#eef2ff"/></svg>
+ <h3 style="left:230px;top:22px;font-size:34px">অফলাইন (AI)</h3><p style="left:230px;top:70px">কম্পিউটারের সাথে অনুশীলন</p>
+ <div class="go" style="top:30px;background:#7a4fe0;color:#e0d0ff;width:70px;height:70px"><i data-i="play"></i></div></div>
+<!-- tiles -->
+<div class="tile" data-go="s23" style="left:56px"><i data-i="pencil" data-c="#3a6cff"></i><b>পেন সংগ্রহ</b></div>
+<div class="tile" data-go="s29" style="left:284px"><i data-i="bagi" data-c="#2c4a9a"></i><b>ইনভেন্টরি</b></div>
+<div class="tile" data-go="s25" style="left:498px"><i data-i="cart" data-c="#e33"></i><b>শপ</b></div>
+<div class="tile" data-go="s32" style="left:714px;background:linear-gradient(#5fb8d8,#2a7ea0)"><i data-i="trophy"></i><b style="background:rgba(10,50,70,.75);color:#fff">লিডারবোর্ড</b></div>
+<div class="tile" data-go="s33" style="left:932px"><i data-i="users" data-c="#e0a000"></i><b>বন্ধু তালিকা</b></div>
+<!-- bottom nav -->
+<div class="a" style="left:18px;top:1213px;width:1146px;height:102px;border-radius:20px;background:linear-gradient(#1c2340,#0b0f24);border:3px solid rgba(170,190,255,.5);box-shadow:0 8px 14px rgba(0,0,0,.5)"></div>
+<div class="bn" style="left:22px;width:276px;top:1215px;height:98px;background:linear-gradient(#ffe45c,#f0a000);border-radius:18px;color:#3a1d00;border:3px solid #fff3b0"><i data-i="home"></i>হোম</div>
+<div class="bn" data-go="s17" style="left:300px;width:290px"><i data-i="user"></i>প্রোফাইল</div>
+<div class="bn" data-go="s17" style="left:590px;width:290px"><i data-i="chart"></i>পরিসংখ্যান</div>
+<div class="bn" data-go="s39" style="left:880px;width:280px"><i data-i="gear"></i>সেটিংস</div>
+</div>
+</body></html>
