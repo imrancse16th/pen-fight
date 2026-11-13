@@ -102,5 +102,6 @@ CREATE TABLE IF NOT EXISTS rate_limits (
   KEY idx_touched (touched)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
--- first admin (change the password later from the admin panel / by replacing this hash)
-INSERT IGNORE INTO admins (email, pass_hash, created_at) VALUES ('imrancse16th@gmail.com', '$2y$10$rJUWoVks/Q9HV/D8Zi3HNO2cwNrTCFQRtJS57As4eIUsPzADCXp9q', UNIX_TIMESTAMP());
+-- First admin: create it yourself with your own e-mail and a hash of your own password.
+--   1) make a hash:   php -r "echo password_hash('YOUR-PASSWORD', PASSWORD_DEFAULT);"
+--   2) run:           INSERT INTO admins (email, pass_hash, created_at) VALUES ('you@example.com', 'PASTE-HASH-HERE', UNIX_TIMESTAMP());

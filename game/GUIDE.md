@@ -3,7 +3,7 @@
 ## 1) পিসিতে চালানো (XAMPP)
 - XAMPP-এ **Apache** চালু রাখুন।
 - গেম: `http://localhost/pen/game/dist/index.html`
-- অ্যাডমিন প্যানেল: `http://localhost/pen/admin/` — পাসওয়ার্ড `penfight-admin` (বদলাতে `api/lib.php`-এর `ADMIN_PASSWORD`)।
+- অ্যাডমিন প্যানেল: `http://localhost/pen/admin/` — ইমেইল ও পাসওয়ার্ড দিয়ে ঢুকবেন (প্রথম অ্যাডমিন বানানোর নিয়ম `api/schema.sql`-এর শেষে লেখা আছে)।
 
 ## 2) ডায়মন্ড ও অ্যাডমিন
 - প্লেয়ারের আইডি গেমের **শপ** ও **সেটিংস** স্ক্রিনে দেখা যায়।
